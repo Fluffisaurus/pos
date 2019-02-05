@@ -1,143 +1,222 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
-    <title>P01 - Style Guide Template</title>
+  <meta charset="utf-8">
+  <title>P01 - Style Guide Template</title>
 
-    <link href="css/main.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
 
-  </head>
+</head>
 
-  <body>
+<body>
 
-    <header>
-      <h1>P01 - Style Guide Template</h1>
+  <header>
+    <h1>P02 - Watch Station</h1>
 
-      <p>A template you can use to start building out your own style guides with.</p>
-
-
-      <nav>        
-        <a href="#interactive_elements">Interactive Elements</a>
-        <a href="#text_elements">Text Elements</a>
-        <a href="#combined_elements">Combined Elements</a>
-        <a href="product_listing.html">Product Listing Template</a>
-        <a href="checkout.html">Checkout Template</a>
-        <a href="#citations">Citations</a>
-      </nav>
+    <p>A template you can use to start building out your own style guides with.</p>
 
 
-
-    <!-- INTERACTIVE ELEMENTS SECTION // -->
-    <section id="interactive_elements">
-      <h2>Interactive Elements</h2>
-
-
-      <section class="element">
-        <h3>In-text link</h3>
-      </section>
-
-
-      <!-- Default Button styling section -->
-      <section class="element">
-
-        <h3>Navigation Link</h3>
-
-        <h4>CSS selector:</h4>
-        <p>.button-nav</p>
-
-        <h4>Sample code:</h4>
-        <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
-
-        <h4>Rendered element:</h4>
-        <a class="button-nav" href="#">Default Button</a>
-
-      </section>
+    <nav>
+      <a href="#interactive_elements">Interactive Elements</a>
+      <a href="#text_elements">Text Elements</a>
+      <a href="#combined_elements">Combined Elements</a>
+      <a href="product_listing.html">Product Listing Template</a>
+      <a href="checkout.html">Checkout Template</a>
+      <a href="#citations">Citations</a>
+    </nav>
+  </header>
 
 
-      <section class="element">
-        <h3>Submit/Reset Buttons</h3>
-      </section>
+  <!-- INTERACTIVE ELEMENTS SECTION // -->
+  <section id="interactive_elements">
+    <h2>Interactive Elements</h2>
 
 
-      <section class="element">
-        <h3>Text Input Field with Label</h3>
-      </section>
+    <section class="element">
+      <h3>In-text link</h3>
 
+      <h4>CSS Selector:</h4>
+      <p></p>
 
-      <section class="element">
-        <h3>Radio Button with Label</h3>
-      </section>
+      <h4>Sample code:</h4>
+      <pre><code> 
+        &lt;p&gt;Check out our &lt;a href="#text_elements"&gt;latest deals&lt;/a&gt; for the holiday! &lt;/p&gt;
+      </code></pre>
 
-
-      <section class="element">
-        <h3>Image as a Link</h3>
-      </section>
-
-
+      <h4>Rendered element:</h4>
+      <p>Check out our <a href="#text_elements">latest deals</a> for the holiday! </p>
     </section>
-    <!-- // INTERACTIVE ELEMENTS SECTION -->
 
 
+    <!-- Default Button styling section -->
+    <section class="element">
 
-    <!-- TEXT ELEMENTS SECTION // -->
-    <section id="text_elements">
-      <h2>Text Elements</h2>
+      <h3>Navigation Link</h3>
 
-      <section class="element">
-        <h3>Headings</h3>
-      </section>
+      <h4>CSS selector:</h4>
+      <p>.button-nav</p>
 
-      <section class="element">
-        <h3>Paragraphs</h3>
-      </section>
+      <h4>Sample code:</h4>
+      <pre><code>
+        &lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;
+      </code></pre>
 
-      <section class="element">
-        <h3>Numbered Lists</h3>
-      </section>
-
-    </section>
-    <!-- // TEXT ELEMENTS SECTION -->
-
-
-
-    <!-- COMBINED ELEMENTS SECTION // -->
-    <section id="combined_elements">
-      <h2>Combined Elements</h2>
-
-      <section class="element">
-        <h3>Main Navigation</h3>
-      </section>
-
-      <section class="element">
-        <h3>Product/Service Listing</h3>
-      </section>
-
-      <section class="element">
-        <h3>Payment Form</h3>
-      </section>
-
-      <section class="element">
-        <h3>Checkout Cart</h3>
-      </section>
-
-    </section>
-    <!-- // COMBINED ELEMENTS SECTION -->
-
-
-
-    <section id="citations">
-      <h2>Citations</h2>
-
-      <ul>
-        <li>Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans">https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a></li>
-        <li>Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a href="#">URL</a>.</li>
-      </ul>
+      <h4>Rendered element:</h4>
+      <a class="button-nav" href="#">Default Button</a>
 
     </section>
 
 
+    <section class="element">
+      <h3>Submit/Reset Buttons</h3>
 
-  </body>
+      <h4>CSS selector:</h4>
+      <p>.button_confirmation</p>
+
+      <h4>Sample code:</h4>
+      <pre><code>
+          &lt;button class="button_confirmation" type="reset"&gt; Clear &lt;/button&gt; 
+          &lt;button class="button_confirmation" type="submit"&gt; Submit &lt;/button&gt; 
+        </code></pre>
+
+      <h4>Rendered element:</h4>
+      <button class="button_confirmation" type="reset"> Clear </button>
+      <button class="button_confirmation" type="submit"> Submit </button>
+    </section>
+
+
+    <section class="element">
+      <h3>Text Input Field with Label</h3>
+
+      <h4>CSS selector: </h4>
+      <p>.form_general</p>
+
+      <h4>Sample code:</h4>
+      <pre><code>
+          &lt;form class="form_general" name="feedback_form"&gt;
+            &lt;label for="comment"&gt;Comments: &lt;/label&gt;&lt;input type="text" name="comment" id="comment"&gt;
+          &lt;/form&gt;
+        </code></pre>
+
+      <h4>Rendered element:</h4>
+      <form class="form_general" name="feedback_form">
+        <label for="comment">Comments: </label><input type="text" name="comment" id="comment">
+        <label for="rating">Rating: </label><input type="number" name="rating" id="rating">
+        <label for="email">Email: </label><input type="email" name="email" id="email">
+      </form>
+    </section>
+
+
+    <section class="element">
+      <h3>Radio Button with Label</h3>
+
+      <h4>CSS selector: </h4>
+      <p>.form_radio</p>
+
+      <h4>Sample code:</h4>
+      <pre><code>
+          &lt;form class="form_radio" name="quantity_to_buy"&gt;
+            &lt;input type="radio" name="quantity_option" value="quantity1" id="quantity1"&gt; &lt;label for="quantity1">1&lt;/label&gt;
+          &lt;/form&gt;
+        </code></pre>
+
+      <h4>Rendered element:</h4>
+      <form class="form_radio" name="quantity_to_buy">
+        <input type="radio" name="quantity_option" value="quantity1" id="quantity1"> <label for="quantity1">1</label>
+        <input type="radio" name="quantity_option" value="quantity2" id="quantity2"> <label for="quantity2">2</label>
+        <input type="radio" name="quantity_option" value="quantity3" id="quantity3"> <label for="quantity3">3</label>
+        <input type="radio" name="quantity_option" value="quantity4" id="quantity4"> <label for="quantity4">4</label>
+        <input type="radio" name="quantity_option" value="quantity5" id="quantity5"> <label for="quantity5">5</label>
+      </form>
+    </section>
+
+
+    <section class="element">
+      <h3>Image as a Link</h3>
+
+      <h4>CSS selector: </h4>
+      <p>.image_link</p>
+
+      <h4>Sample code:</h4>
+      <pre><code>
+          &lt;a href="#top" target="_blank"&gt;
+           &lt;img src="https://via.placeholder.com/300x300.png?text=Flower+Picture+Here" alt="placeholder for a watch picture from https://placeholder.com/"&gt;
+          &lt;/a&gt;
+        </code></pre>
+
+      <h4>Rendered element:</h4>
+      <a href="#top" target="_blank">
+        <img class="image_link" src="https://via.placeholder.com/300x300.png?text=Flower+Picture+Here" alt="placeholder for a watch picture from https://placeholder.com/">
+      </a>
+    </section>
+
+
+  </section>
+  <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+  <!-- TEXT ELEMENTS SECTION // -->
+  <section id="text_elements">
+    <h2>Text Elements</h2>
+
+    <section class="element">
+      <h3>Headings</h3>
+    </section>
+
+    <section class="element">
+      <h3>Paragraphs</h3>
+    </section>
+
+    <section class="element">
+      <h3>Numbered Lists</h3>
+    </section>
+
+  </section>
+  <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+  <!-- COMBINED ELEMENTS SECTION // -->
+  <section id="combined_elements">
+    <h2>Combined Elements</h2>
+
+    <section class="element">
+      <h3>Main Navigation</h3>
+    </section>
+
+    <section class="element">
+      <h3>Product/Service Listing</h3>
+    </section>
+
+    <section class="element">
+      <h3>Payment Form</h3>
+    </section>
+
+    <section class="element">
+      <h3>Checkout Cart</h3>
+    </section>
+
+  </section>
+  <!-- // COMBINED ELEMENTS SECTION -->
+
+
+
+  <section id="citations">
+    <h2>Citations</h2>
+
+    <ul>
+      <li>Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans">https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a></li>
+      <li>Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a href="#">URL</a>.</li>
+    </ul>
+
+  </section>
+
+
+
+</body>
+
 </html>
