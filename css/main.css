@@ -73,3 +73,41 @@ code {
 /* 
   COMBINED ELEMENTS -------------------
 */
+
+
+/* 
+  BRANDING----------------------
+*/
+
+.colour-palette{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.colour{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 200px;
+  height: 150px;
+}
+
+#darkgrey{
+  background-color: seashell;
+}
+
+#lightgray{
+  background-color: #EEE;
+}
+
+#aqua{
+  background-color: #D9D9D9;
+}
+
+#sky{
+  background-color: #ed976d;
+}
+
+#smoke{
+  background-color: #c4f0b1;
+}
