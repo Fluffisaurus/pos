@@ -39,15 +39,15 @@
       <h3>In-text link</h3>
 
       <h4>CSS Selector:</h4>
-      <p></p>
+      <p>.in-text_link</p>
 
       <h4>Sample code:</h4>
       <pre><code> 
-        &lt;p&gt;Check out our &lt;a href="#text_elements"&gt;latest deals&lt;/a&gt; for the holiday! &lt;/p&gt;
+        &lt;p&gt;Check out our &lt;a class="in-text_link" href="#text_elements"&gt;latest deals&lt;/a&gt; for the holiday! &lt;/p&gt;
       </code></pre>
 
       <h4>Rendered element:</h4>
-      <p>Check out our <a href="#text_elements">latest deals</a> for the holiday! </p>
+      <p>Check out our <a class="in-text_link" href="#text_elements">latest deals</a> for the holiday! </p>
     </section>
 
 
@@ -182,18 +182,130 @@
 
     <section class="element">
       <h3>Main Navigation</h3>
+
+      <h4>CSS selector: </h4>
+      <p>nav a</p>
+
+      <h4>Sample code:</h4>
+      <pre><code>
+        &lt;nav&gt;
+          &lt;a href="#"&gt;Women's&lt;/a&gt;
+          &lt;a href="#"&gt;Men's&lt;/a&gt;
+          &lt;a href="#"&gt;Wearable Tech&lt;/a&gt;
+          &lt;a href="#"&gt;Sale&lt;/a&gt;
+        &lt;/nav&gt;
+      </code></pre>
+
+      <h4>Rendered element:</h4>
+      <nav>
+        <a href="#">Women's</a>
+        <a href="#">Men's</a>
+        <a href="#">Wearable Tech</a>
+        <a href="#">Sale</a>
+      </nav>
+
     </section>
 
     <section class="element">
       <h3>Product/Service Listing</h3>
+
+      <h4>CSS selector: </h4>
+      <p>.item_listing</p>
+
+      <h4>Sample code:</h4>
+      <pre><code>
+        &lt;figure class="item_listing"&gt;
+          &lt;img src="https://via.placeholder.com/300x300.png?text=Flower+Picture+Here" alt="placeholder for a watch picture from https://placeholder.com/"&gt;
+          &lt;h4>Title of Watch Product Here&lt;/h4&gt;
+          &lt;p>Watch description here... &lt;/p&gt;
+          &lt;span> $XXX.xx - $XXX.xx&lt;/span&gt;
+        &lt;/figure&gt;
+      </code></pre>
+
+      <h4>Rendered element:</h4>
+      <section id="#products" class="container-product-listing">
+        <div class="block-pl">
+          <figure class="item_listing">
+            <img src="https://via.placeholder.com/300x300.png?text=Flower+Picture+Here" alt="placeholder for a watch picture from https://placeholder.com/">
+            <h4>Title of Watch Product Here</h4>
+            <p>Watch description here... </p>
+            <span> $XXX.xx - $XXX.xx</span>
+          </figure>
+        </div>
+      </section>
     </section>
 
     <section class="element">
       <h3>Payment Form</h3>
+
+      <h4>CSS selector:</h4>
+      <p>.payment_form</p>
+
+      <h4>Sample code:</h4>
+      <pre><code>
+        &lt;form class="payment_form"&gt;
+          &lt;div&gt;
+            &lt;h4>Billing Information&lt;/h4&gt;
+            &lt;label for="firstName">First Name &lt;/label&gt; &lt;input type="text" name="firstName" id="firstName"&gt;
+          &lt;/div&gt;
+      
+          &lt;div&gt;
+            &lt;button type="submit"&gt;Get in touch&lt;/button&gt;
+          &lt;/div&gt;
+        &lt;/form&gt;
+      </code></pre>
+
+      <h4>Rendered element:</h4>
+      <form class="payment_form">
+        <!-- Billing info -->
+        <div>
+          <h4>Billing Information</h4>
+          <label for="firstName">First Name </label> <input type="text" name="firstName" id="firstName">
+          <label for="lastName">Last Name </label><input type="text" name="lastName" id="lastName">
+          <label for="address">Address </label><input type="text" name="addnress" id="address">
+          <label for="address2">Address Line 2 </label><input type="text" name="addnress2" id="address2">
+          <label for="city">City </label><input type="text" name="city" id="city">
+          <fieldset>
+            <legend>Province</legend>
+            <label for="BC">British Columbia </label><input type="radio" name="BC" id="BC">
+            <label for="AB">Alberta </label><input type="radio" name="AB" id="AB">
+            <label for="MB">Manitoba </label><input type="radio" name="MB" id="MB">
+            <label for="NB">New Brunswick </label><input type="radio" name="NB" id="NB">
+            <label for="NL">Newfoundland and Labrador </label><input type="radio" name="NL" id="NL">
+            <label for="NT">Northwest Territories </label><input type="radio" name="NT" id="NT">
+            <label for="NS">Nova Scotia </label><input type="radio" name="NS" id="NS">
+            <label for="NU">Nunavut </label><input type="radio" name="NU" id="NU">
+            <label for="ON">Ontario </label><input type="radio" name="ON" id="ON">
+            <label for="PE">Prince Edward Island </label><input type="radio" name="PE" id="PE">
+            <label for="QC">Quebec </label><input type="radio" name="QC" id="QC">
+            <label for="SK">Saskatchewan </label><input type="radio" name="SK" id="SK">
+            <label for="YT">Yukon </label><input type="radio" name="YT" id="YT">
+          </fieldset>
+          <label for="postalCode">Postal Code </label><input type="text" name="postalCode" id="postalCode">
+          <label for="phoneNum">Phone Number </label><input type="number" name="phoneNum" id="phoneNum">
+        </div>
+  
+        <!-- submit section -->
+        <div>
+          <!-- currently in the contact us page they use the phrase "Get in touch" for submit -->
+          <button type="submit">Get in touch</button>
+        </div>
+      </form>
+
     </section>
 
     <section class="element">
       <h3>Checkout Cart</h3>
+
+      <h4>CSS selector:</h4>
+      <p>.payment_form</p>
+
+      <h4>Sample code:</h4>
+      <pre><code>
+
+      </code></pre>
+
+      <h4>Rendered element:</h4>
     </section>
 
   </section>
