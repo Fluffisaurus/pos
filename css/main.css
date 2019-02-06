@@ -3,8 +3,10 @@
   Default styling for the style guide 
 */
 body {
-  font-family: sans-serif;
+  font-family: "Raleway", sans-serif;
   padding: 2rem;
+  color: #292830; 
+  /* main text color ^^ */
 }
 
 .element {
@@ -12,23 +14,6 @@ body {
   border-top-width: 0.15rem;
   border-top-style: solid;
   border-top-color: black;
-}
-
-h2 {
-  margin-top: 6rem;
-}
-
-h3 {
-  font-style: italic;
-  margin-top: 1rem;
-}
-
-h4 {
-  margin-bottom: 0.25rem;
-}
-
-p {
-  margin-top: 0;
 }
 
 nav a:hover, nav a:focus {
@@ -46,34 +31,127 @@ code {
   INTERACTIVE ELEMENTS -------------------
 */
 
+/* Styling for in-text link */
+.in-text_link {
+  color: #8B8D91;
+  text-decoration: none;
+  background-color: #ffffff;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+.in-text_link:hover, .in-text_link:focus {
+  color: #292830;
+}
+
+/* Styling for confirmation button */
+.button_confirmation {
+  border-radius: 0.4em;
+  border-color: #A5E2FF;
+  color: #292830;
+  background-color: white;
+  transition-property: color;
+  transition-duration: 0.5s;
+}
+
+.button_confirmation:active, .button_confirmation:hover, .button_confirmation:focus {
+  color: #A5E2FF;
+}
+
+/* Styling for form */
+.form_general {}
+
+/* Styling for radio buttons */
+.form_radio {}
+
+
+/* Styling for image links */
+.image_link {
+  opacity: 1;
+  cursor: pointer;
+  max-width: 20em;
+}
+
+.image_link:hover {
+  opacity: 0.7;
+  background-color: #6EDDB5;
+}
+
 /* Styling for the navigation button */
 .button-nav {
   display: inline-block;
   padding: 0.5rem;
   color: white;
-  background-color: rgb(50,50,50);
+  background-color: #292830;
   text-decoration: none;
   transition-property: background-color; 
   transition-duration: 0.5s;
 }
 
 .button-nav:hover, .button-nav:focus {
-  background-color: rgb(200,200,200);
+  background-color: #6EDDB5;
 }
-
-
 
 /* 
   TEXT ELEMENTS -------------------
 */
 
+h1 {
+  font-size: 2rem;
+  font-weight: bolder;
+  text-align: center;
+}
 
+h2 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
 
+h3 {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+h4 {
+  font-weight: normal;
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+p {
+  padding: 0.5em 0em;
+  max-width: 60em;
+  font-weight: normal;
+}
+
+ol {
+  padding: 0em 1em;
+}
+
+li {
+  padding: 0.5em 0em;
+  max-width: 60em;
+  font-weight: normal;
+  color: rgb(50,50,50);
+}
 
 /* 
   COMBINED ELEMENTS -------------------
 */
 
+nav {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 0.1em dotted #6EDDB5;
+  margin-bottom: 1em;
+}
+
+nav a:hover, nav a:focus {
+  text-decoration: underline;
+}
 
 /* 
   BRANDING----------------------
@@ -84,6 +162,7 @@ code {
   flex-direction: row;
   flex-wrap: wrap;
 }
+
 .colour{
   display: flex;
   justify-content: space-around;
@@ -93,21 +172,22 @@ code {
 }
 
 #darkgrey{
-  background-color: seashell;
+  background-color: #292830;
+  color: white;
 }
 
 #lightgray{
-  background-color: #EEE;
+  background-color: #8B8D91;
 }
 
 #aqua{
-  background-color: #D9D9D9;
+  background-color: #6EDDB5;
 }
 
 #sky{
-  background-color: #ed976d;
+  background-color: #A5E2FF;
 }
 
 #smoke{
-  background-color: #c4f0b1;
+  background-color: #EDF9F6;
 }
