@@ -9,6 +9,8 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
 
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
 </head>
 
 <body>
@@ -190,7 +192,13 @@
 
       <h4>Sample code:</h4>
       <pre><code>
-        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum metus vel est pharetra, quis suscipit neque placerat. Curabitur sit amet justo at tellus volutpat posuere quis at arcu. Curabitur hendrerit vel elit quis porta. Suspendisse eget purus in justo rhoncus venenatis. Nullam eu luctus eros. Etiam eleifend finibus nisl et commodo. Proin molestie neque risus, at rhoncus dui lobortis id. Vestibulum viverra finibus justo et maximus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum vitae dignissim nibh, eget lobortis augue.&lt;/p&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum 
+        metus vel est pharetra, quis suscipit neque placerat. Curabitur sit amet justo at tellus 
+        volutpat posuere quis at arcu. Curabitur hendrerit vel elit quis porta. Suspendisse eget purus 
+        in justo rhoncus venenatis. Nullam eu luctus eros. Etiam eleifend finibus nisl et commodo. Proin 
+        molestie neque risus, at rhoncus dui lobortis id. Vestibulum viverra finibus justo et maximus.
+        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+        Vestibulum vitae dignissim nibh, eget lobortis augue.&lt;/p&gt;
       </code></pre>
 
       <h4>Rendered element:</h4>
@@ -362,6 +370,56 @@
       </code></pre>
 
       <h4>Rendered element:</h4>
+      <section class="container-checkout">
+        <div class="section-title">
+          <h2>Checkout</h2>
+        </div>
+
+        <div class="checkout-layout">
+          <div class="LHS">
+            <div class="block-checkout">
+              <figure class="item_checkout">
+                <div class="checkout_picture">
+                  <img src="https://via.placeholder.com/300x300.png?text=Flower+Picture+Here" alt="placeholder for a flower picture from https://placeholder.com/">
+                </div>
+                <div class="checkout_description">
+                  <h4>Title of Flower Here</h4>
+                  <!-- went to websites like amazon and other online stores to see how they did their pricing, they all used span tag
+                                      to style their pricing with CSS, also referred to w3schools for more details on this tag https://www.w3schools.com/tags/tag_span.asp  -->
+                  <span> $XX.xx - $XXX.xx</span>
+                </div>
+              </figure>
+            </div>
+            <div class="block-checkout">
+              <figure class="item_checkout">
+                <div class="checkout_picture">
+                  <img src="https://via.placeholder.com/300x300.png?text=Flower+Picture+Here" alt="placeholder for a flower picture from https://placeholder.com/">
+                </div>
+                <div class="checkout_description">
+                  <h4>Title of Flower Here</h4>
+                  <!-- went to websites like amazon and other online stores to see how they did their pricing, they all used span tag
+                                        to style their pricing with CSS, also referred to w3schools for more details on this tag https://www.w3schools.com/tags/tag_span.asp  -->
+                  <span> $XX.xx - $XXX.xx</span>
+                </div>
+              </figure>
+            </div>
+          </div> <!-- end LHS -->
+
+          <div class="MID">
+
+          </div> <!-- end MID -->
+
+          <div class="RHS">
+            <div>
+              <h3>Cart Total</h3>
+              <p>ajvlajsdlfkjaslk;fjaskl;fjd;slajf;dslfja;l</p>
+              <a class="button-nav" href="checkout-payment.html" target="_blank">Proceed to Payment</a>
+            </div>
+          </div> <!-- end RHS -->
+        </div>
+
+      </section>
+
     </section>
 
   </section>
