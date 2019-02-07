@@ -44,19 +44,23 @@ code {
   color: #292830;
 }
 
-/* Styling for confirmation button */
-.button_confirmation {
-  border-radius: 0.4em;
-  border-color: #C6D9FF;
-  color: #292830;
-  background-color: white;
-  transition-property: color;
-  transition-duration: 0.5s;
+button[type=submit], button[type=reset] {
+  font-family: "Raleway", sans-serif;
+  display: inline-block;
+  padding: 0.5rem;
+  text-decoration: none;
+  transition: all 0.5s ease;
+  text-transform: uppercase;
+  color: #8B8D91;
+  background-color: transparent;
+  border: 0.08em solid transparent;
 }
 
-.button_confirmation:active, .button_confirmation:hover, .button_confirmation:focus {
-  color: #C6D9FF;
+button[type=submit]:active, button[type=submit]:hover, button[type=submit]:focus, button[type=reset]:active, button[type=reset]:hover, button[type=reset]:focus {
+  color: #292830;
+  border: 0.08em solid #292830;
 }
+
 
 /* Styling for form */
 .form_general {}
@@ -78,18 +82,46 @@ code {
 }
 
 /* Styling for the navigation button */
-.button-nav {
+.button_nav {
+  font-family: "Raleway", sans-serif;
   display: inline-block;
   padding: 0.5rem;
-  color: white;
-  background-color: #292830;
   text-decoration: none;
-  transition-property: background-color; 
-  transition-duration: 0.5s;
+  transition: all 0.5s ease;
+  text-transform: uppercase;
 }
 
-.button-nav:hover, .button-nav:focus {
-  background-color: #2849C1;
+/* Below is for different colour nav buttons */
+.button_default {
+  color: #8B8D91;
+  background-color: transparent;
+  border: 0.08em solid transparent;
+}
+
+.button_default:active, .button_default:hover, .button_default:focus {
+  border: 0.08em solid #292830;
+}
+
+.button_dark {
+  color: white;
+  background-color: #292830;
+  border: 0.08em solid #292830;
+}
+
+.button_dark:active, .button_dark:hover, .button_dark:focus {
+  color: #292830;
+  background-color: transparent;
+}
+
+.button_trans {
+  color: white;
+  background-color: transparent;
+  border: 0.1em solid white;
+}
+
+.button_trans:active, .button_trans:hover, .button_trans:focus {
+  background-color: #292830;
+  border-color: #292830;
 }
 
 /* 
@@ -99,7 +131,7 @@ code {
 h1 {
   font-family: "Raleway", sans-serif;
   font-size: 2rem;
-  font-weight: 800;
+  font-weight: 700;
   text-transform: uppercase;
   text-align: center;
 }
@@ -107,22 +139,28 @@ h1 {
 h2 {
   font-family: "Raleway", sans-serif;
   margin-top: 1rem;
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 1.7rem;
+  font-weight: 600;
+  font-style: italic;
+  text-transform: uppercase;
 }
 
 h3 {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   margin-top: 1rem;
+  font-weight: 600;
 }
 
 h4 {
   font-family: "Raleway", sans-serif;
   font-weight: normal;
+  font-size: 1.2rem;
   margin-top: 1rem;
   margin-bottom: 0.25rem;
+  font-weight: 400;
+  font-style: italic;
 }
 
 p {
@@ -149,22 +187,25 @@ nav {
   background-color: #ffffff;
   display: flex;
   justify-content: space-around;
-  border-bottom: 0.1em dotted #C6D9FF;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 
 nav a {
-  color: #292830;
+  font-family: "Raleway", sans-serif;
+  display: inline-block;
+  padding: 0.2rem;
   text-decoration: none;
-  background-color: #ffffff;
-  transition-property: background-color;
-  transition-duration: 0.5s;
-}
-
-nav a:hover, nav a:focus {
+  transition: all 0.5s ease;
+  text-transform: uppercase;
   color: #8B8D91;
+  background-color: transparent;
+  border: 0.08em solid transparent;
 }
 
+nav a:active, nav a:hover, nav a:focus {
+  border-bottom: 0.08em solid #8B8D91;
+  color: #292830;
+}
 /* 
   BRANDING----------------------
 */
@@ -201,5 +242,5 @@ nav a:hover, nav a:focus {
 }
 
 #smoke{
-  background-color: #EDF9F6;
+  background-color: #F9FCFF;
 }
