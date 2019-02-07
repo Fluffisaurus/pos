@@ -58,15 +58,19 @@
       <h3>Navigation Link</h3>
 
       <h4>CSS selector:</h4>
-      <p>.button-nav</p>
+      <p>.button_nav</p>
 
       <h4>Sample code:</h4>
       <pre><code>
-        &lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;
+        &lt;a href="#" class="button_nav button_default"&gt;Default Button&lt;/a&gt;
+        &lt;a href="#" class="button_nav button_dark"&gt;Dark Button&lt;/a&gt;
+        &lt;a href="#" class="button_nav button_trans"&gt;Transparent Button&lt;/a&gt;
       </code></pre>
 
       <h4>Rendered element:</h4>
-      <a class="button-nav" href="#">Default Button</a>
+      <a class="button_nav button_default" href="#">Default Button</a> 
+      <a class="button_nav button_dark" href="#">Dark Button</a>
+      <a class="button_nav button_trans" href="#">Transparent Button</a>
 
     </section>
 
@@ -104,12 +108,11 @@
 
       <h4>Rendered element:</h4>
       <form class="form_general" name="feedback_form">
-        <label for="comment">Comments: </label><input type="text" name="comment" id="comment">
+        <label for="comment">Comments: </label><input type="text" name="comment" id="comment" placeholder="Tell us about your experience!">
         <label for="rating">Rating: </label><input type="number" name="rating" id="rating">
         <label for="email">Email: </label><input type="email" name="email" id="email">
       </form>
     </section>
-
 
     <section class="element">
       <h3>Radio Button with Label</h3>
@@ -412,7 +415,7 @@
             <div>
               <h3>Cart Total</h3>
               <p>ajvlajsdlfkjaslk;fjaskl;fjd;slajf;dslfja;l</p>
-              <a class="button-nav" href="checkout-payment.html" target="_blank">Proceed to Payment</a>
+              <a class="button_nav button_dark" href="checkout-payment.html" target="_blank">Proceed to Payment</a>
             </div>
           </div> <!-- end RHS -->
         </div>
@@ -456,9 +459,6 @@
 
     <section class="element">
       <h3>Colour Palette</h3>
-      <figure>
-        <img src="img/colour-palette.png" alt="pic of colour palette">
-      </figure>
       <div class="colour-palette">
           <div class="colour" id="darkgrey">
             <p>#292830</p>
@@ -466,14 +466,14 @@
           <div class="colour" id="lightgray">
             <p>#8B8D91</p>
           </div>
+          <div class="colour" id="aqua">
+            <p>#2849C1</p>
+          </div>
+          <div class="colour" id="sky">
+            <p>#C6D9FF</p>
+          </div>
           <div class="colour" id="smoke">
-            <p>#6EDDB5</p>
-          </div>
-          <div class="colour" id="darkblue">
-            <p>#A5E2FF</p>
-          </div>
-          <div class="colour" id="periwinkle">
-            <p>#EDF9F6</p>
+            <p>#F9FCFF</p>
           </div>
         </div>
     </section>
