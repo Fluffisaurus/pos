@@ -1,33 +1,33 @@
 /* CHECKOUT */
-.container-checkout{
+.container_checkout{
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
 }
 
-.container-checkout .checkout-layout{
+.container_checkout .checkout_layout{
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
 }
 
-.container-checkout .checkout-layout .LHS{
+.container_checkout .checkout_layout .LHS{
   flex-basis: 65%;
 }
 
-.container-checkout .checkout-layout .RHS{
+.container_checkout .checkout_layout .RHS{
   flex-basis: 35%;
 }
 
-.container-checkout .checkout-layout .LHS-summary{
+.container_checkout .checkout_layout .LHS-summary{
   flex-basis:40%;
 }
 
-.container-checkout .checkout-layout .RHS-summary{
+.container_checkout .checkout_layout .RHS-summary{
   flex-basis: 60%;
 }
 
-.block-checkout{
+.block_checkout{
   display: flex;
   flex-direction: row;
   border-bottom-style: solid;
@@ -36,7 +36,7 @@
   margin-bottom: 2em;
 }
 
-.block-checkout .item_checkout{
+.block_checkout .item_checkout{
   display: inherit;
   flex-direction: inherit;
   flex-wrap: wrap;
@@ -58,4 +58,56 @@
   display: flex;
   flex-direction: row;
   margin: auto;
+}
+
+
+/* PRODUCT LISTING */
+.container_product_listing{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container_product_listing .block_pl{
+  flex-grow: 1;
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+}
+
+.section_title{
+  flex-basis: 100%;
+  margin-bottom: 1em;
+}
+/* end of product listing */
+
+/* QUERIES */
+/* width > 1300 px */
+@media(min-width: 81.25em){
+  .container_product_listing .block_pl{
+      flex-basis: 25%;
+      max-width: 25%;
+  }
+}
+
+/* width [1000, 1300) */
+@media(max-width: 81.25em){
+  .container_product_listing .block_pl{
+      flex-basis: 33.3%;
+      max-width: 33.3%;
+  }
+}
+
+/* width [675, 1000) */
+@media(max-width: 62.5em){
+  .container_product_listing .block_pl{
+      flex-basis: 50%;
+      max-width: 50%;
+  }
+}
+
+/* width [0, 675) */
+@media(max-width: 42.1875em){
+  .container_product_listing .block_pl{
+      flex-basis: 100%;
+      max-width: 100%;
+  }
 }
