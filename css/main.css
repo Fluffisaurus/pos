@@ -210,7 +210,7 @@ nav a:active, nav a:hover, nav a:focus {
   BRANDING----------------------
 */
 
-.colour-palette{
+.colour_palette{
   display:flex;
   flex-direction: row;
   flex-wrap: wrap;
