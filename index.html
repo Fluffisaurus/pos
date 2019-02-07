@@ -8,6 +8,7 @@
 
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
+  <link href="css/grid.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,600i,700,700i,800" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i" rel="stylesheet">
 </head>
@@ -361,11 +362,24 @@
       <h3>Checkout Cart</h3>
 
       <h4>CSS selector:</h4>
-      <p>.payment_form</p>
+      <p>.container-checkout, .checkout-layout, .block-checkout</p>
 
       <h4>Sample code:</h4>
       <pre><code>
-
+        &lt;section class="container-checkout"&gt;
+          &lt;div class="section-title"&gt;
+            &lt;h2&gt;Checkout&lt;/h2&gt;
+          &lt;/div&gt;
+          &lt;div class="checkout-layout"&gt;
+            &lt;div class="LHS"&gt;
+              &lt;!-- item layout stuff here --&gt;
+            &lt;/div&gt; &lt;!-- end LHS --&gt;
+      
+            &lt;div class="RHS"&gt;
+              &lt;!-- confirmation stuff here --&gt;
+            &lt;/div&gt; &lt;!-- end RHS --&gt;
+          &lt;div&gt;
+        &lt;/section&gt;
       </code></pre>
 
       <h4>Rendered element:</h4>
@@ -373,7 +387,6 @@
         <div class="section-title">
           <h2>Checkout</h2>
         </div>
-
         <div class="checkout-layout">
           <div class="LHS">
             <div class="block-checkout">
@@ -383,11 +396,12 @@
                 </div>
                 <div class="checkout_description">
                   <h4>Title of Flower Here</h4>
-                  <!-- went to websites like amazon and other online stores to see how they did their pricing, they all used span tag
-                                      to style their pricing with CSS, also referred to w3schools for more details on this tag https://www.w3schools.com/tags/tag_span.asp  -->
                   <span> $XX.xx - $XXX.xx</span>
                 </div>
               </figure>
+              <div class="quantity">
+                <p class="quant_number">1</p>
+              </div>
             </div>
             <div class="block-checkout">
               <figure class="item_checkout">
@@ -401,12 +415,11 @@
                   <span> $XX.xx - $XXX.xx</span>
                 </div>
               </figure>
+              <div class="quantity">
+                <p class="quant_number">1</p>
+              </div>
             </div>
           </div> <!-- end LHS -->
-
-          <div class="MID">
-
-          </div> <!-- end MID -->
 
           <div class="RHS">
             <div>
