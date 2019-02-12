@@ -69,7 +69,27 @@ button[type=submit]:active, button[type=submit]:hover, button[type=submit]:focus
 
 /* Styling for form */
 .form_general {
-  
+  width: 18rem;
+  height: auto;
+}
+
+input[type=text] {
+  width: 100%;
+  white-space: pre-line;
+}
+
+input[type=email] {
+  width: 100%;
+  white-space: pre-line;
+}
+
+input[type=number] {
+  width: 100%;
+  white-space: pre-line;
+}
+
+fieldset {
+  white-space: pre-line;
 }
 
 ::placeholder {
@@ -79,7 +99,7 @@ button[type=submit]:active, button[type=submit]:hover, button[type=submit]:focus
 
 /* Styling for radio buttons */
 .form_radio {
-
+    white-space: pre-line;
 }
 
 /* Styling for image links */
@@ -220,7 +240,8 @@ nav a:active, nav a:hover, nav a:focus {
 /* Styling for payment form */
 
 .payment_form {
-  
+  width: 20rem;
+  height: auto;
 }
 
 
