@@ -26,6 +26,10 @@ code {
   display: inline-block;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 /* 
   INTERACTIVE ELEMENTS -------------------
@@ -43,6 +47,8 @@ code {
 .in-text_link:hover, .in-text_link:focus {
   color: #292830;
 }
+
+/* Styling for submit/reset button */
 
 button[type=submit], button[type=reset] {
   display: inline-block;
@@ -72,7 +78,9 @@ button[type=submit]:active, button[type=submit]:hover, button[type=submit]:focus
 }
 
 /* Styling for radio buttons */
-.form_radio {}
+.form_radio {
+
+}
 
 /* Styling for image links */
 .image_link {
