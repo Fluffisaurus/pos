@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
   padding: 2rem;
   color: #292830; 
   /* main text color ^^ */
@@ -26,6 +26,10 @@ code {
   display: inline-block;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 /* 
   INTERACTIVE ELEMENTS -------------------
@@ -44,8 +48,9 @@ code {
   color: #292830;
 }
 
+/* Styling for submit/reset button */
+
 button[type=submit], button[type=reset] {
-  font-family: "Raleway", sans-serif;
   display: inline-block;
   padding: 0.5rem;
   text-decoration: none;
@@ -63,11 +68,39 @@ button[type=submit]:active, button[type=submit]:hover, button[type=submit]:focus
 
 
 /* Styling for form */
-.form_general {}
+.form_general {
+  width: 18rem;
+  height: auto;
+}
+
+input[type=text] {
+  width: 100%;
+  white-space: pre-line;
+}
+
+input[type=email] {
+  width: 100%;
+  white-space: pre-line;
+}
+
+input[type=number] {
+  width: 100%;
+  white-space: pre-line;
+}
+
+fieldset {
+  white-space: pre-line;
+}
+
+::placeholder {
+  font-size: 0.9rem;
+  font-family: "Raleway", sans-serif;
+}
 
 /* Styling for radio buttons */
-.form_radio {}
-
+.form_radio {
+    white-space: pre-line;
+}
 
 /* Styling for image links */
 .image_link {
@@ -83,7 +116,6 @@ button[type=submit]:active, button[type=submit]:hover, button[type=submit]:focus
 
 /* Styling for the navigation button */
 .button_nav {
-  font-family: "Raleway", sans-serif;
   display: inline-block;
   padding: 0.5rem;
   text-decoration: none;
@@ -99,6 +131,7 @@ button[type=submit]:active, button[type=submit]:hover, button[type=submit]:focus
 }
 
 .button_default:active, .button_default:hover, .button_default:focus {
+  color: #292830;
   border: 0.08em solid #292830;
 }
 
@@ -129,7 +162,6 @@ button[type=submit]:active, button[type=submit]:hover, button[type=submit]:focus
 */
 
 h1 {
-  font-family: "Raleway", sans-serif;
   font-size: 2rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -137,7 +169,6 @@ h1 {
 }
 
 h2 {
-  font-family: "Raleway", sans-serif;
   margin-top: 1rem;
   font-size: 1.7rem;
   font-weight: 600;
@@ -146,7 +177,6 @@ h2 {
 }
 
 h3 {
-  font-family: "Raleway", sans-serif;
   font-weight: bold;
   font-size: 1.4rem;
   margin-top: 1rem;
@@ -154,7 +184,6 @@ h3 {
 }
 
 h4 {
-  font-family: "Raleway", sans-serif;
   font-weight: normal;
   font-size: 1.2rem;
   margin-top: 1rem;
@@ -164,6 +193,7 @@ h4 {
 }
 
 p {
+  font-family: "Open Sans", sans-serif;
   padding: 0.5em 0em;
   max-width: 60em;
   font-weight: normal;
@@ -191,7 +221,7 @@ nav {
 }
 
 nav a {
-  font-family: "Raleway", sans-serif;
+  
   display: inline-block;
   padding: 0.2rem;
   text-decoration: none;
@@ -206,6 +236,40 @@ nav a:active, nav a:hover, nav a:focus {
   border-bottom: 0.08em solid #8B8D91;
   color: #292830;
 }
+
+/* Styling for payment form */
+
+.payment_form {
+  width: 20rem;
+  height: auto;
+}
+
+
+/* Styling for checkout cart */
+
+.LHS {
+  padding-right: 2em;
+}
+
+.LHS input[type=number] {
+  width: 20%;
+  margin: auto;
+  border: 0 solid transparent;
+  padding: 0.3em;
+}
+
+.LHS input[type=number]:hover, .LHS input[type=number]:focus, .LHS input[type=number]:active {
+  border: 0.05em solid #DDDDDD;
+}
+
+.RHS {
+  background-color: #DDDDDD;
+  padding-left: 2em;
+  padding-top: 1em;
+  border-left: 0.2em solid #8B8D91;
+}
+
+
 /* 
   BRANDING----------------------
 */
