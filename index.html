@@ -25,178 +25,180 @@
       <a href="#interactive_elements">Interactive Elements</a>
       <a href="#text_elements">Text Elements</a>
       <a href="#combined_elements">Combined Elements</a>
-      <a href="product_listing.html">Product Listing Template</a>
-      <a href="checkout.html">Checkout Template</a>
+      <a href="#productListing">Product Listing Template</a>
+      <a href="#checkoutCart">Checkout Template</a>
       <a href="#company_info">Company Info</a>
       <a href="#citations">Citations</a>
     </nav>
 
-
-    <!-- INTERACTIVE ELEMENTS SECTION // -->
-    <section id="interactive_elements">
-      <h2>Interactive Elements</h2>
+  </header>
 
 
-      <section class="element">
-        <h3>In-text link</h3>
+  <!-- INTERACTIVE ELEMENTS SECTION // -->
+  <section id="interactive_elements">
+    <h2>Interactive Elements</h2>
 
-        <h4>CSS Selector:</h4>
-        <p>.in-text_link</p>
 
-        <h4>Sample code:</h4>
-        <pre><code> 
+    <section class="element">
+      <h3>In-text link</h3>
+
+      <h4>CSS Selector:</h4>
+      <p>.in-text_link</p>
+
+      <h4>Sample code:</h4>
+      <pre><code> 
         &lt;p&gt;Check out our &lt;a class="in-text_link" href="#text_elements"&gt;latest deals&lt;/a&gt; for the holiday! &lt;/p&gt;
       </code></pre>
 
-        <h4>Rendered element:</h4>
-        <p>Check out our <a class="in-text_link" href="#text_elements">latest deals</a> for the holiday! </p>
-      </section>
+      <h4>Rendered element:</h4>
+      <p>Check out our <a class="in-text_link" href="#text_elements">latest deals</a> for the holiday! </p>
+    </section>
 
 
-      <!-- Default Button styling section -->
-      <section class="element">
+    <!-- Default Button styling section -->
+    <section class="element">
 
-        <h3>Navigation Link</h3>
+      <h3>Navigation Link</h3>
 
-        <h4>CSS selector:</h4>
-        <p>.button_nav</p>
+      <h4>CSS selector:</h4>
+      <p>.button_nav</p>
 
-        <h4>Sample code:</h4>
-        <pre><code>
+      <h4>Sample code:</h4>
+      <pre><code>
         &lt;a href="#" class="button_nav button_default"&gt;Default Button&lt;/a&gt;
         &lt;a href="#" class="button_nav button_dark"&gt;Dark Button&lt;/a&gt;
         &lt;a href="#" class="button_nav button_trans"&gt;Transparent Button&lt;/a&gt;
       </code></pre>
 
-        <h4>Rendered element:</h4>
-        <a class="button_nav button_default" href="#">Default Button</a>
-        <a class="button_nav button_dark" href="#">Dark Button</a>
-        <a class="button_nav button_trans" href="#">Transparent Button</a>
+      <h4>Rendered element:</h4>
+      <a class="button_nav button_default" href="">Default Button</a>
+      <a class="button_nav button_dark" href="">Dark Button</a>
+      <a class="button_nav button_trans" href="">Transparent Button</a>
 
-      </section>
+    </section>
 
 
-      <section class="element">
-        <h3>Submit/Reset Buttons</h3>
+    <section class="element">
+      <h3>Submit/Reset Buttons</h3>
 
-        <h4>CSS selector:</h4>
-        <p>.button_confirmation</p>
+      <h4>CSS selector:</h4>
+      <p>.button_confirmation</p>
 
-        <h4>Sample code:</h4>
-        <pre><code>
+      <h4>Sample code:</h4>
+      <pre><code>
           &lt;button class="button_confirmation" type="reset"&gt; Clear &lt;/button&gt; 
           &lt;button class="button_confirmation" type="submit"&gt; Submit &lt;/button&gt; 
         </code></pre>
 
-        <h4>Rendered element:</h4>
-        <button class="button_confirmation" type="reset"> Clear </button>
-        <button class="button_confirmation" type="submit"> Submit </button>
-      </section>
+      <h4>Rendered element:</h4>
+      <button class="button_confirmation" type="reset"> Clear </button>
+      <button class="button_confirmation" type="submit"> Submit </button>
+    </section>
 
 
-      <section class="element">
-        <h3>Text Input Field with Label</h3>
+    <section class="element">
+      <h3>Text Input Field with Label</h3>
 
-        <h4>CSS selector: </h4>
-        <p>.form_general</p>
+      <h4>CSS selector: </h4>
+      <p>.form_general</p>
 
-        <h4>Sample code:</h4>
-        <pre><code>
+      <h4>Sample code:</h4>
+      <pre><code>
           &lt;form class="form_general" name="feedback_form"&gt;
             &lt;label for="comment"&gt;Comments: &lt;/label&gt;&lt;input type="text" name="comment" id="comment"&gt;
           &lt;/form&gt;
         </code></pre>
 
-        <h4>Rendered element:</h4>
-        <form class="form_general" name="feedback_form">
-          <label for="comment">Comments: </label><input type="text" name="comment" id="comment"
-            placeholder="Tell us about your experience!">
-          <label for="rating">Rating: </label><input type="number" name="rating" id="rating">
-          <label for="email">Email: </label><input type="email" name="email" id="email">
-        </form>
-      </section>
+      <h4>Rendered element:</h4>
+      <form class="form_general" name="feedback_form">
+        <label for="comment">Comments: </label><input type="text" name="comment" id="comment"
+          placeholder="Tell us about your experience!">
+        <label for="rating">Rating: </label><input type="number" name="rating" id="rating">
+        <label for="email">Email: </label><input type="email" name="email" id="email">
+      </form>
+    </section>
 
-      <section class="element">
-        <h3>Radio Button with Label</h3>
+    <section class="element">
+      <h3>Radio Button with Label</h3>
 
-        <h4>CSS selector: </h4>
-        <p>.form_radio</p>
+      <h4>CSS selector: </h4>
+      <p>.form_radio</p>
 
-        <h4>Sample code:</h4>
-        <pre><code>
+      <h4>Sample code:</h4>
+      <pre><code>
           &lt;form class="form_radio" name="quantity_to_buy"&gt;
             &lt;input type="radio" name="quantity_option" value="quantity1" id="quantity1"&gt; &lt;label for="quantity1">1&lt;/label&gt;
           &lt;/form&gt;
         </code></pre>
 
-        <h4>Rendered element:</h4>
-        <form class="form_radio" name="quantity_to_buy">
-          <input type="radio" name="quantity_option" value="quantity1" id="quantity1"> <label for="quantity1">1</label>
-          <input type="radio" name="quantity_option" value="quantity2" id="quantity2"> <label for="quantity2">2</label>
-          <input type="radio" name="quantity_option" value="quantity3" id="quantity3"> <label for="quantity3">3</label>
-          <input type="radio" name="quantity_option" value="quantity4" id="quantity4"> <label for="quantity4">4</label>
-          <input type="radio" name="quantity_option" value="quantity5" id="quantity5"> <label for="quantity5">5</label>
-        </form>
-      </section>
+      <h4>Rendered element:</h4>
+      <form class="form_radio" name="quantity_to_buy">
+        <input type="radio" name="quantity_option" value="quantity1" id="quantity1"> <label for="quantity1">1</label>
+        <input type="radio" name="quantity_option" value="quantity2" id="quantity2"> <label for="quantity2">2</label>
+        <input type="radio" name="quantity_option" value="quantity3" id="quantity3"> <label for="quantity3">3</label>
+        <input type="radio" name="quantity_option" value="quantity4" id="quantity4"> <label for="quantity4">4</label>
+        <input type="radio" name="quantity_option" value="quantity5" id="quantity5"> <label for="quantity5">5</label>
+      </form>
+    </section>
 
 
-      <section class="element">
-        <h3>Image as a Link</h3>
+    <section class="element">
+      <h3>Image as a Link</h3>
 
-        <h4>CSS selector: </h4>
-        <p>.image_link</p>
+      <h4>CSS selector: </h4>
+      <p>.image_link</p>
 
-        <h4>Sample code:</h4>
-        <pre><code>
+      <h4>Sample code:</h4>
+      <pre><code>
           &lt;a href="#top" target="_blank"&gt;
            &lt;img src="https://via.placeholder.com/300x300.png?text=Flower+Picture+Here" alt="placeholder for a watch picture from https://placeholder.com/"&gt;
           &lt;/a&gt;
         </code></pre>
 
-        <h4>Rendered element:</h4>
-        <a href="#top" target="_blank">
-          <img class="image_link" src="https://via.placeholder.com/300x300.png?text=Flower+Picture+Here"
-            alt="placeholder for a watch picture from https://placeholder.com/">
-        </a>
-      </section>
-
-
+      <h4>Rendered element:</h4>
+      <a href="#top" target="_blank">
+        <img class="image_link" src="https://via.placeholder.com/300x300.png?text=Flower+Picture+Here"
+          alt="placeholder for a watch picture from https://placeholder.com/">
+      </a>
     </section>
-    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+  </section>
+  <!-- // INTERACTIVE ELEMENTS SECTION -->
 
 
 
-    <!-- TEXT ELEMENTS SECTION // -->
-    <section id="text_elements">
-      <h2>Text Elements</h2>
+  <!-- TEXT ELEMENTS SECTION // -->
+  <section id="text_elements">
+    <h2>Text Elements</h2>
 
-      <section class="element">
-        <h3>Headings</h3>
-        <h4>CSS selector: </h4>
-        <p>h1, h2, h3, h4</p>
+    <section class="element">
+      <h3>Headings</h3>
+      <h4>CSS selector: </h4>
+      <p>h1, h2, h3, h4</p>
 
-        <h4>Sample code:</h4>
-        <pre><code>
+      <h4>Sample code:</h4>
+      <pre><code>
         &lt;h1&gt;Heading 1&lt;/h1&gt;
         &lt;h2&gt;Heading 2&lt;/h2&gt;
         &lt;h3&gt;Heading 3&lt;/h3&gt;
         &lt;h4&gt;Heading 4&lt;/h4&gt;
       </code></pre>
 
-        <h4>Rendered element:</h4>
-        <h1>Heading 1</h1>
-        <h2>Heading 2</h2>
-        <h3>Heading 3</h3>
-        <h4>Heading 4</h4>
-      </section>
+      <h4>Rendered element:</h4>
+      <h1>Heading 1</h1>
+      <h2>Heading 2</h2>
+      <h3>Heading 3</h3>
+      <h4>Heading 4</h4>
+    </section>
 
-      <section class="element">
-        <h3>Paragraphs</h3>
-        <h4>CSS selector:</h4>
-        <p>p</p>
+    <section class="element">
+      <h3>Paragraphs</h3>
+      <h4>CSS selector:</h4>
+      <p>p</p>
 
-        <h4>Sample code:</h4>
-        <pre><code>
+      <h4>Sample code:</h4>
+      <pre><code>
         &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum 
         metus vel est pharetra, quis suscipit neque placerat. Curabitur sit amet justo at tellus 
         volutpat posuere quis at arcu. Curabitur hendrerit vel elit quis porta. Suspendisse eget purus 
@@ -206,62 +208,62 @@
         Vestibulum vitae dignissim nibh, eget lobortis augue.&lt;/p&gt;
       </code></pre>
 
-        <h4>Rendered element:</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum metus vel est pharetra, quis
-          suscipit neque placerat. Curabitur sit amet justo at tellus volutpat posuere quis at arcu. Curabitur hendrerit
-          vel elit quis porta. Suspendisse eget purus in justo rhoncus venenatis. Nullam eu luctus eros. Etiam eleifend
-          finibus nisl et commodo. Proin molestie neque risus, at rhoncus dui lobortis id. Vestibulum viverra finibus
-          justo et maximus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
-          egestas. Vestibulum vitae dignissim nibh, eget lobortis augue.</p>
-      </section>
+      <h4>Rendered element:</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum metus vel est pharetra, quis
+        suscipit neque placerat. Curabitur sit amet justo at tellus volutpat posuere quis at arcu. Curabitur hendrerit
+        vel elit quis porta. Suspendisse eget purus in justo rhoncus venenatis. Nullam eu luctus eros. Etiam eleifend
+        finibus nisl et commodo. Proin molestie neque risus, at rhoncus dui lobortis id. Vestibulum viverra finibus
+        justo et maximus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+        egestas. Vestibulum vitae dignissim nibh, eget lobortis augue.</p>
+    </section>
 
-      <section class="element">
-        <h3>Numbered Lists</h3>
-        <h4>CSS selector:</h4>
-        <p>ol, li</p>
+    <section class="element">
+      <h3>Numbered Lists</h3>
+      <h4>CSS selector:</h4>
+      <p>ol, li</p>
 
-        <h4>Sample code:</h4>
-        <pre><code>
+      <h4>Sample code:</h4>
+      <pre><code>
         &lt;h4&gt;Brands&lt;/h4&gt;
         &lt;ol&gt;
           &lt;li>Armani Exchange&lt;/li&gt;
         &lt;/ol&gt;
       </code></pre>
 
-        <h4>Rendered element:</h4>
-        <h4>Brands</h4>
-        <ol>
-          <li>Armani Exchange</li>
-          <li>Chaps</li>
-          <li>Diesel</li>
-          <li>DKNY</li>
-          <li>Emporio Armani</li>
-          <li>Emporio Armani Swiss Made</li>
-          <li>Fossil</li>
-          <li>kate spade new york</li>
-          <li>Marc Jacobs</li>
-          <li>Michael Kors</li>
-          <li>Misfit</li>
-          <li>Mon Amie</li>
-          <li>Skagen</li>
-          <li>Thom Olson</li>
-          <li><strong>View All</strong></li>
-        </ol>
-      </section>
+      <h4>Rendered element:</h4>
+      <h4>Brands</h4>
+      <ol>
+        <li>Armani Exchange</li>
+        <li>Chaps</li>
+        <li>Diesel</li>
+        <li>DKNY</li>
+        <li>Emporio Armani</li>
+        <li>Emporio Armani Swiss Made</li>
+        <li>Fossil</li>
+        <li>kate spade new york</li>
+        <li>Marc Jacobs</li>
+        <li>Michael Kors</li>
+        <li>Misfit</li>
+        <li>Mon Amie</li>
+        <li>Skagen</li>
+        <li>Thom Olson</li>
+        <li><strong>View All</strong></li>
+      </ol>
     </section>
+  </section>
 
-    <!-- COMBINED ELEMENTS SECTION // -->
-    <section id="combined_elements">
-      <h2>Combined Elements</h2>
+  <!-- COMBINED ELEMENTS SECTION // -->
+  <section id="combined_elements">
+    <h2>Combined Elements</h2>
 
-      <section class="element">
-        <h3>Main Navigation</h3>
+    <section class="element">
+      <h3>Main Navigation</h3>
 
-        <h4>CSS selector: </h4>
-        <p>nav a</p>
+      <h4>CSS selector: </h4>
+      <p>nav a</p>
 
-        <h4>Sample code:</h4>
-        <pre><code>
+      <h4>Sample code:</h4>
+      <pre><code>
         &lt;nav&gt;
           &lt;a href="#"&gt;Women's&lt;/a&gt;
           &lt;a href="#"&gt;Men's&lt;/a&gt;
@@ -270,24 +272,24 @@
         &lt;/nav&gt;
       </code></pre>
 
-        <h4>Rendered element:</h4>
-        <nav>
-          <a href="#">Women's</a>
-          <a href="#">Men's</a>
-          <a href="#">Wearable Tech</a>
-          <a href="#">Sale</a>
-        </nav>
+      <h4>Rendered element:</h4>
+      <nav>
+        <a href="#">Women's</a>
+        <a href="#">Men's</a>
+        <a href="#">Wearable Tech</a>
+        <a href="#">Sale</a>
+      </nav>
 
-      </section>
+    </section>
 
-      <section class="element">
-        <h3>Product/Service Listing</h3>
+    <section class="element" id = "productListing">
+      <h3>Product/Service Listing</h3>
 
-        <h4>CSS selector: </h4>
-        <p>.item_listing</p>
+      <h4>CSS selector: </h4>
+      <p>.item_listing</p>
 
-        <h4>Sample code:</h4>
-        <pre><code>
+      <h4>Sample code:</h4>
+      <pre><code>
         &lt;figure class="item_listing"&gt;
           &lt;img src="https://via.placeholder.com/300x300.png?text=Flower+Picture+Here" alt="placeholder for a watch picture from https://placeholder.com/"&gt;
           &lt;h4>Title of Watch Product Here&lt;/h4&gt;
@@ -296,28 +298,28 @@
         &lt;/figure&gt;
       </code></pre>
 
-        <h4>Rendered element:</h4>
-        <section id="#products" class="container_product_listing">
-          <div class="block_pl">
-            <figure class="item_listing">
-              <img src="https://via.placeholder.com/300x300.png?text=Flower+Picture+Here"
-                alt="placeholder for a watch picture from https://placeholder.com/">
-              <h4>Title of Watch Product Here</h4>
-              <p>Watch description here... </p>
-              <span> $XXX.xx - $XXX.xx</span>
-            </figure>
-          </div>
-        </section>
+      <h4>Rendered element:</h4>
+      <section id="#products" class="container_product_listing">
+        <div class="block_pl">
+          <figure class="item_listing">
+            <img src="https://via.placeholder.com/300x300.png?text=Flower+Picture+Here"
+              alt="placeholder for a watch picture from https://placeholder.com/">
+            <h4>Title of Watch Product Here</h4>
+            <p>Watch description here... </p>
+            <span> $XXX.xx - $XXX.xx</span>
+          </figure>
+        </div>
       </section>
+    </section>
 
-      <section class="element">
-        <h3>Payment Form</h3>
+    <section class="element">
+      <h3>Payment Form</h3>
 
-        <h4>CSS selector:</h4>
-        <p>.payment_form</p>
+      <h4>CSS selector:</h4>
+      <p>.payment_form</p>
 
-        <h4>Sample code:</h4>
-        <pre><code>
+      <h4>Sample code:</h4>
+      <pre><code>
         &lt;form class="payment_form"&gt;
           &lt;div&gt;
             &lt;h4>Billing Information&lt;/h4&gt;
@@ -330,53 +332,53 @@
         &lt;/form&gt;
       </code></pre>
 
-        <h4>Rendered element:</h4>
-        <form class="payment_form">
-          <!-- Billing info -->
-          <div>
-            <h4>Billing Information</h4>
-            <label for="firstName">First Name </label> <input type="text" name="firstName" id="firstName">
-            <label for="lastName">Last Name </label><input type="text" name="lastName" id="lastName">
-            <label for="address">Address </label><input type="text" name="addnress" id="address">
-            <label for="address2">Address Line 2 </label><input type="text" name="addnress2" id="address2">
-            <label for="city">City </label><input type="text" name="city" id="city">
-            <fieldset>
-              <legend>Province</legend>
-              <label for="BC">British Columbia </label><input type="radio" name="province" id="BC" value="BC">
-              <label for="AB">Alberta </label><input type="radio" name="province" id="AB" value="AB">
-              <label for="MB">Manitoba </label><input type="radio" name="province" id="MB" value="MB">
-              <label for="NB">New Brunswick </label><input type="radio" name="province" id="NB" value="NB">
-              <label for="NL">Newfoundland and Labrador </label><input type="radio" name="province" id="NL" value="NL">
-              <label for="NT">Northwest Territories </label><input type="radio" name="province" id="NT" value="NT">
-              <label for="NS">Nova Scotia </label><input type="radio" name="province" id="NS" value="NS">
-              <label for="NU">Nunavut </label><input type="radio" name="province" id="NU" value="NU">
-              <label for="ON">Ontario </label><input type="radio" name="province" id="ON" value="ON">
-              <label for="PE">Prince Edward Island </label><input type="radio" name="province" id="PE" value="PE">
-              <label for="QC">Quebec </label><input type="radio" name="province" id="QC" value="QC">
-              <label for="SK">Saskatchewan </label><input type="radio" name="province" id="SK" value="SK">
-              <label for="YT">Yukon </label><input type="radio" name="province" id="YT" value="YT">
-            </fieldset>
-            <label for="postalCode">Postal Code </label><input type="text" name="postalCode" id="postalCode">
-            <label for="phoneNum">Phone Number </label><input type="number" name="phoneNum" id="phoneNum">
-          </div>
+      <h4>Rendered element:</h4>
+      <form class="payment_form">
+        <!-- Billing info -->
+        <div>
+          <h4>Billing Information</h4>
+          <label for="firstName">First Name </label> <input type="text" name="firstName" id="firstName">
+          <label for="lastName">Last Name </label><input type="text" name="lastName" id="lastName">
+          <label for="address">Address </label><input type="text" name="addnress" id="address">
+          <label for="address2">Address Line 2 </label><input type="text" name="addnress2" id="address2">
+          <label for="city">City </label><input type="text" name="city" id="city">
+          <fieldset>
+            <legend>Province</legend>
+            <label for="BC">British Columbia </label><input type="radio" name="province" id="BC" value="BC">
+            <label for="AB">Alberta </label><input type="radio" name="province" id="AB" value="AB">
+            <label for="MB">Manitoba </label><input type="radio" name="province" id="MB" value="MB">
+            <label for="NB">New Brunswick </label><input type="radio" name="province" id="NB" value="NB">
+            <label for="NL">Newfoundland and Labrador </label><input type="radio" name="province" id="NL" value="NL">
+            <label for="NT">Northwest Territories </label><input type="radio" name="province" id="NT" value="NT">
+            <label for="NS">Nova Scotia </label><input type="radio" name="province" id="NS" value="NS">
+            <label for="NU">Nunavut </label><input type="radio" name="province" id="NU" value="NU">
+            <label for="ON">Ontario </label><input type="radio" name="province" id="ON" value="ON">
+            <label for="PE">Prince Edward Island </label><input type="radio" name="province" id="PE" value="PE">
+            <label for="QC">Quebec </label><input type="radio" name="province" id="QC" value="QC">
+            <label for="SK">Saskatchewan </label><input type="radio" name="province" id="SK" value="SK">
+            <label for="YT">Yukon </label><input type="radio" name="province" id="YT" value="YT">
+          </fieldset>
+          <label for="postalCode">Postal Code </label><input type="text" name="postalCode" id="postalCode">
+          <label for="phoneNum">Phone Number </label><input type="number" name="phoneNum" id="phoneNum">
+        </div>
 
-          <!-- submit section -->
-          <div>
-            <!-- currently in the contact us page they use the phrase "Get in touch" for submit -->
-            <button type="submit">Get in touch</button>
-          </div>
-        </form>
+        <!-- submit section -->
+        <div>
+          <!-- currently in the contact us page they use the phrase "Get in touch" for submit -->
+          <button type="submit">Get in touch</button>
+        </div>
+      </form>
 
-      </section>
+    </section>
 
-      <section class="element">
-        <h3>Checkout Cart</h3>
+    <section class="element" id="checkoutCart">
+      <h3>Checkout Cart</h3>
 
-        <h4>CSS selector:</h4>
-        <p>.container_checkout, .checkout_layout, .block_checkout</p>
+      <h4>CSS selector:</h4>
+      <p>.container_checkout, .checkout_layout, .block_checkout</p>
 
-        <h4>Sample code:</h4>
-        <pre><code>
+      <h4>Sample code:</h4>
+      <pre><code>
         &lt;section class="container_checkout"&gt;
           &lt;div class="section_title"&gt;
             &lt;h2&gt;Checkout&lt;/h2&gt;
@@ -393,157 +395,165 @@
         &lt;/section&gt;
       </code></pre>
 
-        <h4>Rendered element:</h4>
-        <section class="container_checkout">
-          <div class="section_title">
-            <h2>Checkout</h2>
-          </div>
-          <div class="checkout_layout">
-            <div class="LHS">
-              <div class="block_checkout">
-                <figure class="item_checkout">
-                  <div class="checkout_picture">
-                    <img src="https://via.placeholder.com/300x300.png?text=Flower+Picture+Here"
-                      alt="placeholder for a flower picture from https://placeholder.com/">
-                  </div>
-                  <div class="checkout_description">
-                    <h4>Title of Flower Here</h4>
-                    <span> $XX.xx - $XXX.xx</span>
-                  </div>
-                </figure>
-                <div class="quantity">
-                  <input class="quant_number" type="number" value="1" min="0">
-                </div>
-              </div>
-              <div class="block_checkout">
-                <figure class="item_checkout">
-                  <div class="checkout_picture">
-                    <img src="https://via.placeholder.com/300x300.png?text=Flower+Picture+Here"
-                      alt="placeholder for a flower picture from https://placeholder.com/">
-                  </div>
-                  <div class="checkout_description">
-                    <h4>Title of Flower Here</h4>
-                    <!-- went to websites like amazon and other online stores to see how they did their pricing, they all used span tag
-                                        to style their pricing with CSS, also referred to w3schools for more details on this tag https://www.w3schools.com/tags/tag_span.asp  -->
-                    <span> $XX.xx - $XXX.xx</span>
-                  </div>
-                </figure>
-                <div class="quantity">
-                  <input class="quant_number" type="number" value="1" min="0">
-                </div>
-              </div>
-            </div> <!-- end LHS -->
-
-            <div class="RHS">
-              <div>
-                <h3>Cart Total</h3>
-                <p>ajvlajsdlfkjaslk;fjaskl;fjd;slajf;dslfja;l</p>
-                <a class="button_nav button_dark" href="checkout-payment.html" target="_blank">Proceed to Payment</a>
-              </div>
-            </div> <!-- end RHS -->
-          </div>
-
-        </section>
-
-      </section>
-
-    </section>
-    <!-- // COMBINED ELEMENTS SECTION -->
-
-    <!-- company info-->
-    <section id="company_info">
-      <h2>Company Info</h2>
-
-      <section class="element">
-        <h3>About the Company</h3>
-        <p>Watch Station partners with the world’s most iconic brands to curate a unique collection of the newest
-          designer watches and smartwatches for men and women. Since joining Fossil Group in 2007, we now operate around
-          100 stores worldwide and offer a robust online and in-store experience that connects you to the stories,
-          trends and latest innovations in the world of watches and wearable tech.</p>
-      </section>
-
-      <section class="element">
-        <h3>Branding</h3>
-        <p>Time Well Spent: We’re here to help you find the right watch for your individual style. Whether you’re
-          marking a life milestone or needing something to simply tell you when you’re running late, we believe a watch
-          should be just as meaningful as your time is.</p>
-      </section>
-
-      <section class="element">
-        <h3>Target</h3>
-        <p>Watch Station carries a wide variety of brands ranging from mid to high-end products at an outlet price. Thus
-          their target age is from 25-49, with a slightly above average income. Their consumers are fashion forward and
-          are usually not buying watches from Watch Station as a long-term investment, but rather to satisfy current
-          styling needs.</p>
-      </section>
-
-    </section>
-    <!-- company info end -->
-
-    <!-- company branding -->
-    <section id="company_branding">
-      <h2>Branding Ideas</h2>
-
-      <section class="element">
-        <h3>Fonts</h3>
-        <p>We will be using Raleway for headings and options and Open Sans for paragraph text. Raleway has more
-          stylistic elements in the text, which may make it harder to read, whereas open sans is very simple and
-          well-spaced. Example below:</p>
-        <h4>The quick brown fox jumps over the lazy dog.</h4>
-        <p>The quick brown fox jumps over the lazy dog.</p>
-      </section>
-
-      <section class="element">
-        <h3>Colour Palette</h3>
-        <div class="colour_palette">
-          <div class="colour" id="darkgrey">
-            <p>#292830</p>
-          </div>
-          <div class="colour" id="lightgray">
-            <p>#8B8D91</p>
-          </div>
-          <div class="colour" id="aqua">
-            <p>#2849C1</p>
-          </div>
-          <div class="colour" id="sky">
-            <p>#C6D9FF</p>
-          </div>
-          <div class="colour" id="smoke">
-            <p>#F9FCFF</p>
-          </div>
+      <h4>Rendered element:</h4>
+      <section class="container_checkout">
+        <div class="section_title">
+          <h2>Checkout</h2>
         </div>
-        <p>Most aspects of the site will be done with dark grey and light grey in terms of text and elements, in order
-          to allow the site's products to stand out. Dark grey is for all paragraph text, while light grey is used for
-          small accents and unfocused buttons. The shades of blue will be used as accents later on once all photos have
-          been added and we are able to identify areas with a lack of color. As you will see in the art direction below,
-          all photos will have some aspect of blue or greyscale tones, along with silver/gold.</p>
+        <div class="checkout_layout">
+          <div class="LHS">
+            <div class="block_checkout">
+              <figure class="item_checkout">
+                <div class="checkout_picture">
+                  <img src="https://via.placeholder.com/300x300.png?text=Flower+Picture+Here"
+                    alt="placeholder for a flower picture from https://placeholder.com/">
+                </div>
+                <div class="checkout_description">
+                  <h4>Title of Flower Here</h4>
+                  <span> $XX.xx - $XXX.xx</span>
+                </div>
+              </figure>
+              <div class="quantity">
+                <input class="quant_number" type="number" value="1" min="0">
+              </div>
+            </div>
+            <div class="block_checkout">
+              <figure class="item_checkout">
+                <div class="checkout_picture">
+                  <img src="https://via.placeholder.com/300x300.png?text=Flower+Picture+Here"
+                    alt="placeholder for a flower picture from https://placeholder.com/">
+                </div>
+                <div class="checkout_description">
+                  <h4>Title of Flower Here</h4>
+                  <!-- went to websites like amazon and other online stores to see how they did their pricing, they all used span tag
+                                        to style their pricing with CSS, also referred to w3schools for more details on this tag https://www.w3schools.com/tags/tag_span.asp  -->
+                  <span> $XX.xx - $XXX.xx</span>
+                </div>
+              </figure>
+              <div class="quantity">
+                <input class="quant_number" type="number" value="1" min="0">
+              </div>
+            </div>
+          </div> <!-- end LHS -->
+
+          <div class="RHS">
+            <div>
+              <h3>Cart Total</h3>
+              <p>ajvlajsdlfkjaslk;fjaskl;fjd;slajf;dslfja;l</p>
+              <a class="button_nav button_dark" href="checkout-payment.html" target="_blank">Proceed to Payment</a>
+            </div>
+          </div> <!-- end RHS -->
+        </div>
+
       </section>
-      <section class="element">
-        <h3>Art Direction</h3>
-        <figure>
-          <img src="img/coll-set.jpg" alt="collection set">
-        </figure>
-        <figure>
-          <img src="img/womens.jpg" alt="collection set">
-        </figure>
-      </section>
-    </section>
-    <!-- company branding end -->
-
-    <section id="citations">
-      <h2>Citations</h2>
-
-      <ul>
-        <li>De Beers. <strong>De Beers Phenomena [Image]. </strong><a href="https://www.debeers.com/high-jewellery/collections/de-beers-phenomena">https://www.debeers.com/high-jewellery/collections/de-beers-phenomena</a></li>
-        <li>Iakovou, Pascal. 2017. <strong>FRED – La Collection 8°0 [Image].</strong> Retrieved from <a href="https://www.luxsure.fr/2017/09/19/fred-collection-80/">https://www.luxsure.fr/2017/09/19/fred-collection-80/</a></li>
-        <li>Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a
-            href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans">https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a>
-        </li>
-        <li>McInerney, Matt. Designer. 2012. <strong>Raleway [Font]</strong>. Retrieved from <a href="https://fonts.google.com/specimen/Raleway?selection.family=Raleway">https://fonts.google.com/specimen/Raleway?selection.family=Raleway</a></li>
-        <li>Valet Staff. 2016. <strong>The One-Watch Collection [Image].</strong><a href="http://www.valetmag.com/style/products/2016/best-one-watch-collection-timepieces-113016.php">http://www.valetmag.com/style/products/2016/best-one-watch-collection-timepieces-113016.php</a></li>
-      </ul>
 
     </section>
+
+  </section>
+  <!-- // COMBINED ELEMENTS SECTION -->
+
+  <!-- company info-->
+  <section id="company_info">
+    <h2>Company Info</h2>
+
+    <section class="element">
+      <h3>About the Company</h3>
+      <p>Watch Station partners with the world’s most iconic brands to curate a unique collection of the newest
+        designer watches and smartwatches for men and women. Since joining Fossil Group in 2007, we now operate around
+        100 stores worldwide and offer a robust online and in-store experience that connects you to the stories,
+        trends and latest innovations in the world of watches and wearable tech.</p>
+    </section>
+
+    <section class="element">
+      <h3>Branding</h3>
+      <p>Time Well Spent: We’re here to help you find the right watch for your individual style. Whether you’re
+        marking a life milestone or needing something to simply tell you when you’re running late, we believe a watch
+        should be just as meaningful as your time is.</p>
+    </section>
+
+    <section class="element">
+      <h3>Target</h3>
+      <p>Watch Station carries a wide variety of brands ranging from mid to high-end products at an outlet price. Thus
+        their target age is from 25-49, with a slightly above average income. Their consumers are fashion forward and
+        are usually not buying watches from Watch Station as a long-term investment, but rather to satisfy current
+        styling needs.</p>
+    </section>
+
+  </section>
+  <!-- company info end -->
+
+  <!-- company branding -->
+  <section id="company_branding">
+    <h2>Branding Ideas</h2>
+
+    <section class="element">
+      <h3>Fonts</h3>
+      <p>We will be using Raleway for headings and options and Open Sans for paragraph text. Raleway has more
+        stylistic elements in the text, which may make it harder to read, whereas open sans is very simple and
+        well-spaced. Example below:</p>
+      <h4>The quick brown fox jumps over the lazy dog.</h4>
+      <p>The quick brown fox jumps over the lazy dog.</p>
+    </section>
+
+    <section class="element">
+      <h3>Colour Palette</h3>
+      <div class="colour_palette">
+        <div class="colour" id="darkgrey">
+          <p>#292830</p>
+        </div>
+        <div class="colour" id="lightgray">
+          <p>#8B8D91</p>
+        </div>
+        <div class="colour" id="aqua">
+          <p>#2849C1</p>
+        </div>
+        <div class="colour" id="sky">
+          <p>#C6D9FF</p>
+        </div>
+        <div class="colour" id="smoke">
+          <p>#F9FCFF</p>
+        </div>
+      </div>
+      <p>Most aspects of the site will be done with dark grey and light grey in terms of text and elements, in order
+        to allow the site's products to stand out. Dark grey is for all paragraph text, while light grey is used for
+        small accents and unfocused buttons. The shades of blue will be used as accents later on once all photos have
+        been added and we are able to identify areas with a lack of color. As you will see in the art direction below,
+        all photos will have some aspect of blue or greyscale tones, along with silver/gold.</p>
+    </section>
+    <section class="element">
+      <h3>Art Direction</h3>
+      <figure>
+        <img src="img/coll-set.jpg" alt="collection set">
+      </figure>
+      <figure>
+        <img src="img/womens.jpg" alt="collection set">
+      </figure>
+    </section>
+  </section>
+  <!-- company branding end -->
+
+  <section id="citations">
+    <h2>Citations</h2>
+
+    <ul>
+      <li>De Beers. <strong>De Beers Phenomena [Image]. </strong><a
+          href="https://www.debeers.com/high-jewellery/collections/de-beers-phenomena">https://www.debeers.com/high-jewellery/collections/de-beers-phenomena</a>
+      </li>
+      <li>Iakovou, Pascal. 2017. <strong>FRED – La Collection 8°0 [Image].</strong> Retrieved from <a
+          href="https://www.luxsure.fr/2017/09/19/fred-collection-80/">https://www.luxsure.fr/2017/09/19/fred-collection-80/</a>
+      </li>
+      <li>Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a
+          href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans">https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a>
+      </li>
+      <li>McInerney, Matt. Designer. 2012. <strong>Raleway [Font]</strong>. Retrieved from <a
+          href="https://fonts.google.com/specimen/Raleway?selection.family=Raleway">https://fonts.google.com/specimen/Raleway?selection.family=Raleway</a>
+      </li>
+      <li>Valet Staff. 2016. <strong>The One-Watch Collection [Image].</strong><a
+          href="http://www.valetmag.com/style/products/2016/best-one-watch-collection-timepieces-113016.php">http://www.valetmag.com/style/products/2016/best-one-watch-collection-timepieces-113016.php</a>
+      </li>
+    </ul>
+
+  </section>
 
 
 
