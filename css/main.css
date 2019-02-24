@@ -1,8 +1,36 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  padding: 2rem;
+  color: #292830; 
+  /* main text color ^^ */
+}
+
+.element {
+  padding-bottom: 2rem;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: #8B8D91;
+}
+
+nav a:hover, nav a:focus {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* 
   TEXT ELEMENTS -------------------
 */
 
 h1 {
+  margin-top: 0;
   font-size: 2rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -49,3 +77,67 @@ li {
   max-width: 60em;
   font-weight: normal;
 }
+
+
+
+/* 
+NAVIGATION BAR -------------------
+*/
+
+nav {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 0.5em;
+}
+
+nav a {
+  display: inline-block;
+  padding: 0.2rem;
+  text-decoration: none;
+  transition: all 0.5s ease;
+  text-transform: uppercase;
+  color: #8B8D91;
+  background-color: transparent;
+  border: 0.08em solid transparent;
+}
+
+nav a:active, nav a:hover, nav a:focus {
+  border-bottom: 0.05em solid #292830;
+  color: #292830;
+}
+
+/* 
+HEADER BAR -------------------
+*/
+
+.container_nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: white;
+  position: sticky;
+  z-index: 1;
+}
+
+.nav_left {
+  margin-top: 0.5em;
+  flex-basis: 30%;
+  align-content: left;
+}
+
+.nav_center {
+  flex-basis: 40%;
+  text-align: center;
+}
+
+.nav_right {
+  margin-top: 0.5em;
+  flex-basis: 30%;
+  align-content: right;
+}
+
