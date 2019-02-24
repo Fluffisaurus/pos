@@ -1,10 +1,11 @@
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
   font-family: "Raleway", sans-serif;
-  padding: 2rem;
+  padding: 0;
+  margin: 0;
   color: #292830; 
   /* main text color ^^ */
 }
@@ -31,15 +32,15 @@ img {
 
 h1 {
   margin-top: 0;
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 1.8rem;
+  font-weight: 600;
   text-transform: uppercase;
   text-align: center;
 }
 
 h2 {
   margin-top: 1rem;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-weight: 600;
   font-style: italic;
   text-transform: uppercase;
@@ -47,14 +48,14 @@ h2 {
 
 h3 {
   font-weight: bold;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   margin-top: 1rem;
   font-weight: 600;
 }
 
 h4 {
   font-weight: normal;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-top: 1rem;
   margin-bottom: 0.25rem;
   font-weight: 400;
@@ -85,12 +86,13 @@ NAVIGATION BAR -------------------
 */
 
 nav {
-  position: sticky;
-  top: 0;
+  font-size: 0.8em;
   background-color: #ffffff;
   display: flex;
   justify-content: space-around;
   margin-bottom: 0.5em;
+  z-index: 1;
+  overflow: hidden;
 }
 
 nav a {
@@ -122,6 +124,8 @@ HEADER BAR -------------------
 .container_nav {
   position: sticky;
   top: 0;
+  margin-top: 0;
+  padding-top: 1em;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -146,4 +150,5 @@ HEADER BAR -------------------
   flex-basis: 30%;
   align-content: right;
 }
+
 
