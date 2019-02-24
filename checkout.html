@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
+
 <head>
 
-  <!-- Basic Page Needs
+	<!-- Basic Page Needs
   ================================================== -->
 	<meta charset="utf-8">
 	<title></title>
@@ -14,24 +15,167 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 	<!-- CSS
-  ================================================== -->
-  <link rel="stylesheet" href="">
+	================================================== -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/checkout.css">
 
 	<!-- Favicons
 	================================================== -->
 	<link rel="shortcut icon" href="">
 
+	<!-- JS
+	================================================== -->
+	<script src="js/checkout.js"></script>
+
 </head>
+
 <body>
 
-  <!-- Primary Page Layout
+	<header>
+
+		<div class="container_nav">
+			<div class="nav_left">
+				<nav>
+					<a href="index.html">Home</a>
+					<a href="products.html">Products</a>
+				</nav>
+			</div>
+			<div class="nav_center">
+				<h1>WATCH STATION</h1>
+			</div>
+			<div class="nav_right">
+				<nav>
+					<a href="about.html">About Us</a>
+					<a href="cart.html">Cart</a>
+				</nav>
+			</div>
+
+		</div>
+	</header>
+	
+	<!-- Primary Page Layout
 	================================================== -->
-  <!-- all content goes in here -->
-  
-  
-  
-  
-  <!-- End Document
+	<!-- all content goes in here -->
+	<div class="container">
+		<section id="shipping_info" class="container_item">
+			<h2>Shipping</h2>
+			<section id="shipping">
+				<h3>Shipping Address</h3>
+				<fieldset id="shipping_address" class="shipping_form">
+					<input type="text" id="shipping_first_name" placeholder="First Name">
+					<input type="text" id="shipping_last_name" placeholder="Last Name">
+					<input type="text" id="shipping_street_address" placeholder="Street Address">
+					<input type="text" id="shipping_unit" placeholder="Unit">
+					<input type="text" id="shipping_city" placeholder="City">
+					<select id="shipping_province_select">
+						<option value="">Select a Province / Territory</option>
+						<option value="BC">British Columbia</option>
+						<option value="AB">Alberta</option>
+						<option value="MB">Manitoba</option>
+						<option value="NB">New Brunswick</option>
+						<option value="NL">Newfoundland and Labrador</option>
+						<option value="NT">Northwest Territories</option>
+						<option value="NS">Nova Scotia</option>
+						<option value="NU">Nunavut</option>
+						<option value="ON">Ontario</option>
+						<option value="PE">Prince Edward Island</option>
+						<option value="QC">Quebec</option>
+						<option value="SK">Saskatchewan</option>
+						<option value="YT">Yukon</option>
+					</select>
+					<input type="number" id="shipping_phone_number" placeholder="Phone Number">
+					<input type="checkbox" id="checkbox_billing_address" onclick="isBillingChecked()">
+					<label for="billing_address">Same as shipping address</label>
+					<input type="checkbox" id="checkbox_is_gift" onclick="isGiftChecked()">
+					<label for="is_gift">Is this item a gift?</label>
+				</fieldset>
+			</section>
+
+			<section id="billing">
+				<h3>Billing Address</h3>
+				<fieldset id="billing_address" class="billing_form">
+					<input type="text" id="shipping_first_name" placeholder="First Name">
+					<input type="text" id="shipping_last_name" placeholder="Last Name">
+					<input type="text" id="shipping_street_address" placeholder="Street Address">
+					<input type="text" id="shipping_unit" placeholder="Unit">
+					<input type="text" id="shipping_city" placeholder="City">
+					<select id="shipping_province_select">
+						<option value="">Select a Province / Territory</option>
+						<option value="BC">British Columbia</option>
+						<option value="AB">Alberta</option>
+						<option value="MB">Manitoba</option>
+						<option value="NB">New Brunswick</option>
+						<option value="NL">Newfoundland and Labrador</option>
+						<option value="NT">Northwest Territories</option>
+						<option value="NS">Nova Scotia</option>
+						<option value="NU">Nunavut</option>
+						<option value="ON">Ontario</option>
+						<option value="PE">Prince Edward Island</option>
+						<option value="QC">Quebec</option>
+						<option value="SK">Saskatchewan</option>
+						<option value="YT">Yukon</option>
+					</select>
+					<input type="number" id="shipping_phone_number" placeholder="Phone Number">
+				</fieldset>
+			</section>
+
+			<section id="gift" style="display: none">
+				<h3>Personalized Message</h3>
+				<fieldset>
+					<legend>Write a personalized message to the recipient!</legend>
+					<input type="checkbox" id="wrap_gift" checked>
+					<label for="wrap_gift">Wrap your gift?</label>
+					<textarea rows="6" cols="35" minlength="0" maxlength="140" placeholder="140 max characters"></textarea>
+				</fieldset>
+			</section>
+		</section>
+
+		<section id="payment_info" class="container_item">
+			<h2>Payment</h2>
+			<h3>Method of Payment</h3>
+			<fieldset>
+				<select id="type_of_payment">
+					<option>Visa</option>
+					<option>MasterCard</option>
+					<option>American Express</option>
+				</select>
+				<input type="number" id="credit_card_number" placeholder="Credit Card Number">
+				<select id="payment_month">
+					<option value="1">01</option>
+					<option value="2">02</option>
+					<option value="3">03</option>
+					<option value="4">04</option>
+					<option value="5">05</option>
+					<option value="6">06</option>
+					<option value="7">07</option>
+					<option value="8">08</option>
+					<option value="9">09</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+				</select>
+				<select id="payment_year">
+					<option value="2019">2019</option>
+					<option value="2020">2020</option>
+					<option value="2021">2021</option>
+					<option value="2022">2022</option>
+					<option value="2023">2023</option>
+					<option value="2024">2024</option>
+					<option value="2025">2025</option>
+					<option value="2026">2026</option>
+					<option value="2027">2027</option>
+				</select>
+				<input type="number" id="payment_security_code" placeholder="Security Code (CVV)">
+			</fieldset>
+		</section>
+
+		<section id="review" class="container_item">
+			<h2>Review</h2>
+		</section>
+	</div>
+	<!-- End Document
 ================================================== -->
 </body>
+
 </html>

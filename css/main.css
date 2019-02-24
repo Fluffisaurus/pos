@@ -109,6 +109,12 @@ nav a:active, nav a:hover, nav a:focus {
   color: #292830;
 }
 
+/* hide input spinners https://stackoverflow.com/a/4298216 */
+input::-webkit-inner-spin-button, ::-webkit-outer-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 /* 
 HEADER BAR -------------------
 */
