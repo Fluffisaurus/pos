@@ -151,4 +151,9 @@ HEADER BAR -------------------
   align-content: right;
 }
 
+a h1 {
+  text-decoration: none;
+  display: inline-block;
+  color: #292830; 
+}
 
