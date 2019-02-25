@@ -25,19 +25,25 @@
   }
 
 .button_trans {
-    color: white;
+    color: #292830;
     background-color: transparent;
-    border: 0.1em solid white;
+    border: 0.1em solid #292830;
   }
   
 .button_trans:active, .button_trans:hover, .button_trans:focus {
-    background-color: #292830;
-    border-color: #292830;
+    background-color: white;
+    border-color: white;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+    opacity: 0.9;
+  }
 
 .img_text {
     font-family: "Open Sans", sans-serif;
-    color: white;
+    color: #292830;
     text-align: center;
 }
 
@@ -50,6 +56,25 @@
     margin-top: 0.5em;
     font-size: 1.2rem;
 }
+
+.container_insta {
+    height: auto;
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
+iframe {
+    border: none;
+}
+
+.container_insta h2 {
+    text-align: center;
+}
+
+.grid_third {
+    flex-basis: 33%;
+}
+
 
 @media (min-width: 60em) {
     .container_home .button_nav {
@@ -119,3 +144,5 @@
         font-size: 1rem;
     }
 }
+
+
