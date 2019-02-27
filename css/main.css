@@ -26,6 +26,17 @@ img {
   height: auto;
 }
 
+/* Image Header */
+.headerimg img {
+  width: 100%;
+  height: auto;
+}
+
+.headerimg h1 {
+  margin-top: 1rem;
+}
+
+
 /* 
   TEXT ELEMENTS -------------------
 */
