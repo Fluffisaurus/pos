@@ -25,3 +25,27 @@
 .twitter {
     padding: 0.5em;
 }
+
+@media (min-width: 60em) {
+    .container_about .block {
+        flex-basis: 33.33%;
+    }
+}
+
+@media (min-width: 40em) and (max-width: 60em) {
+    .container_about .block {
+        flex-basis: 50%;
+    }
+}
+
+@media (min-width: 30em) and (max-width: 40em) {
+    .container_about .block {
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width: 30em) {
+    .container_about .block {
+        flex-basis: 100%;
+    }
+}
