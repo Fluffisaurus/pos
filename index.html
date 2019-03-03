@@ -40,17 +40,21 @@
 
 
 	<section class="container_nav">
-		<div id="hamburger" tabindex="0">
-			<div class="hammy"></div>
-			<div class="hammy"></div>
-			<div class="hammy"></div>
-		</div>
-		<div class="mobile" id="mobile_menu">
-			<div class="mobile_content" id="mobile_menu_content">
-				<a href="mens.html">Mens</a>
-				<a href="womens.html">Womens</a>
-				<a href="about.html">About Us</a>
-				<a href="checkout.html">Cart</a>
+		<!-- taken from: https://codepen.io/heydon/pen/vmKVJK?editors=1100 -->
+		<!-- but modified for our own use -->
+		<div data-menu-component>
+			<input type="checkbox" role="button" aria-haspopup="true" id="toggle" class="vh">
+			<label for="toggle" data-opens-menu>
+				&#x2630;
+				<span class="vh expanded-text">expanded</span>
+				<span class="vh collapsed-text">collapsed</span>
+			</label>
+			<div role="menu" data-menu-origin="left">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
 			</div>
 		</div>
 
