@@ -1,13 +1,10 @@
 // helped with what i wanted to do https://jsfiddle.net/kym2rvyL/1/
 window.addEventListener("click", function(e){
-  if(!document.getElementById("mobile_menu").contains(e.target) || !document.getElementById("mobile_menu_content").contains(e.target)){
-    document.getElementById("mobile_menu").style.width = "0%";
+  if(document.getElementById("toggle").contains(e.target)){
+    document.getElementById("menu_stuff").style.width = "40%";
   }
-  if(document.getElementById("hamburger").contains(e.target)){
-    tenderize();
+  else if(!document.getElementById("menu_items").contains(e.target)){
+    // if not clicking inside menu, close menu
+    document.getElementById("menu_stuff").style.width = "0%";
   }
 });
-
-function tenderize(){
-  document.getElementById("mobile_menu").style.width = "40%";
-}
