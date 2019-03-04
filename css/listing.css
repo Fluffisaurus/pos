@@ -1,0 +1,121 @@
+.container_listing {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2em;
+}
+
+.container_listing .container_imgs {
+    flex-direction: column; 
+    padding: 3em;
+    padding-left: 8em;
+}
+
+.container_imgs img {
+    margin-bottom: 1em;
+}
+
+.container_listing .container_desc {
+    display: flex;
+    flex-direction: column; 
+}
+
+.container_desc .sticky {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 6.25em;
+    background-color: white;
+    padding: 1em 2em;
+    padding-right: 8em;
+    flex-direction: column; 
+}
+
+.container_listing h2 {
+    display: inline-block;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    color: #292830;
+    text-transform: uppercase;
+    background-color: transparent;
+    border-bottom: 0.1em solid #292830;
+  }
+
+.container_listing h3 {
+    font-family: "Raleway", sans-serif;
+    font-size: 1rem;
+    padding: none;
+    font-weight: 600;
+}
+
+.button_desc {
+    text-decoration: none;
+    background-color: transparent;
+    border: none;  
+    transition: all 0.5s ease;
+}
+
+.button_desc:active, .button_desc:hover, .button_desc:focus {
+    color: #8B8D91;
+}
+
+.button_nav {
+    display: block;
+    padding: 0.5rem;
+    margin-top: 2rem;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    text-transform: uppercase;
+  }
+
+.button_trans {
+    color: white;
+    text-align: center;
+    background-color: #292830;
+    border: 0.1em solid #292830;
+  }
+  
+.button_trans:active, .button_trans:hover, .button_trans:focus {
+    background-color: transparent;
+    color: #292830;
+}
+
+.container_desc p {
+    /* display: none; */
+    padding: 0.5em;
+    font-size: 0.8em;
+}
+
+#overview {
+    display: none;
+}
+
+.container_desc li {
+    padding: 0.5em;
+    font-size: 0.8em;
+}
+
+
+@media (min-width: 60em) {
+    .container_listing .container_imgs {
+        flex-basis: 60%;
+    }
+    .container_listing .container_desc {
+        flex-basis: 40%;
+    }
+
+}
+
+@media (min-width: 40em) and (max-width: 60em) {
+
+}
+
+@media (min-width: 30em) and (max-width: 40em) {
+
+}
+
+@media (max-width: 30em) {
+
+}
+
+

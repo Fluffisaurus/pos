@@ -85,6 +85,7 @@ ol {
 }
 
 li {
+  font-family: "Open Sans", sans-serif;
   padding: 0.5em 0em;
   max-width: 60em;
   font-weight: normal;
@@ -141,7 +142,6 @@ HEADER BAR -------------------
   flex-direction: row;
   flex-wrap: wrap;
   background-color: white;
-  position: sticky;
   z-index: 1;
 }
 
