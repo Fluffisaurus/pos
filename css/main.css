@@ -181,23 +181,7 @@ label {
 
 [type="checkbox"]:focus + [data-opens-menu], [role="menu"] a:focus {
   outline: none;
-  background: darkBlue;
-}
-
-:checked + label .expanded-text {
-  display: inline;
-}
-
-:checked + label .collapsed-text {
-  display: none;
-}
-
-[type="checkbox"]:not(:checked) + label .expanded-text {
-  display: none;
-}
-
-[type="checkbox"]:not(:checked) + label .collapsed-text {
-  display: inline;
+  background: lightgray;
 }
 
 [role="menu"] {
@@ -208,12 +192,9 @@ label {
   width: 0%;
   height: 100%;
   background: white;
-  top: 0;
+  padding-top: 1.6em; 
+  opacity: 0.9;
   transition: all ease 0.4s;
-}
-
-:checked ~ [role="menu"] {
-  width: 40%
 }
 
 [data-menu-origin="right"] {
