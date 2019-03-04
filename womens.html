@@ -16,7 +16,7 @@
 
 	<!-- CSS
   ================================================== -->
-  	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/products.css">
 
@@ -37,39 +37,44 @@
 
 <body>
 
-		<section class="container_nav">
-				<div id="hamburger">
-					<div class="hammy"></div>
-					<div class="hammy"></div>
-					<div class="hammy"></div>
-				</div>
-				<div class="mobile" id="mobile_menu">
-					<div class="mobile_content">
-						<a href="mens.html">Mens</a>
-						<a href="womens.html">Womens</a>
-						<a href="about.html">About Us</a>
-						<a href="checkout.html">Cart</a>
-					</div>
-				</div>
-		
-				<div class="nav_left">
-					<nav>
-						<a href="mens.html">Mens</a>
-						<a href="womens.html">Womens</a>
-					</nav>
-				</div>
-				<div class="nav_center">
-					<a href="index.html">
-						<h1>WATCH STATION</h1>
-					</a>
-				</div>
-				<div class="nav_right">
-					<nav>
-						<a href="about.html">About Us</a>
-						<a href="checkout.html">Cart</a>
-					</nav>
-				</div>
-			</section>
+	<section class="container_nav">
+		<!-- taken from: https://codepen.io/heydon/pen/vmKVJK?editors=1100 -->
+		<!-- but modified for our own use -->
+		<div data-menu-component>
+			<input type="checkbox" role="button" aria-haspopup="true" id="toggle" class="vh">
+			<label for="toggle" data-opens-menu>
+				&#x2630;
+				<span class="vh expanded-text">expanded</span>
+				<span class="vh collapsed-text">collapsed</span>
+			</label>
+			<div role="menu" data-menu-origin="left" id="menu_stuff">
+				<ul id="menu_items">
+					<li><a href="mens.html">Mens</a></li>
+					<li><a href="womens.html">Womens</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="cart.html">Cart</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="nav_left">
+			<nav>
+				<a href="mens.html">Mens</a>
+				<a href="womens.html">Womens</a>
+			</nav>
+		</div>
+		<div class="nav_center">
+			<a href="index.html">
+				<h1>WATCH STATION</h1>
+			</a>
+		</div>
+		<div class="nav_right">
+			<nav>
+				<a href="about.html">About Us</a>
+				<a href="checkout.html">Cart</a>
+			</nav>
+		</div>
+	</section>
 
 	<!-- Primary Page Layout
 	================================================== -->
@@ -81,36 +86,48 @@
 	</section>
 
 	<section class="container_prod">
-			<div class="block">
-				<a href="listing-womens.html"><img src="img/womens-fossil.jpg" alt="fossil1">
-				<h3>Fossil</h3><h4>Fossil Neely 34mm Women's Casual Watch with Heart Stud Earrings</h4></a>
-				<h4>$129.99</h4>
-			</div>
-			<div class="block">
-				<a href="listing-womens.html"><img src="img/womens-bulova.jpg" alt="bulova1">
-				<h3>Bulova</h3><h4>Bulova 34mm Women's Dress Watch with Swarovski Crystals</h4></a>
-				<h4>$249.99</h4>
-			</div>
-			<div class="block">
-					<a href="listing-womens.html">	<img src="img/womens-fossil2.jpg" alt="fossil2">
-				<h3>Fossil</h3><h4>Fossil Jacqueline 36mm Women's Marble Watch</h4></a>
-				<h4>$164.99</h4>
-			</div>
-			<div class="block">
-					<a href="listing-womens.html"><img src="img/womens-fossil3.jpg" alt="fossil3">
-				<h3>Fossil</h3><h4>Fossil Jacqueline 36mm Women's Mesh Watch</h4></a>
-				<h4>$139.99</h4>
-			</div>
-			<div class="block">
-					<a href="listing-womens.html"><img src="img/womens-tedbaker.jpg" alt="tedbaker1">
-				<h3>Ted Baker</h3><h4>Ted Baker Women's Kate Watch</h4></a>
-				<h4>$144.99</h4>
-			</div>
-			<div class="block">
-					<a href="listing-womens.html"><img src="img/womens-fossil4.jpg" alt="fossil4">
-				<h3>Fossil</h3><h4>Fossil Jacqueline 36mm Women's Casual Watch</h4></a>
-				<h4>$179.99</h4>
-			</div>
+		<div class="block">
+			<a href="listing-womens.html"><img src="img/womens-fossil.jpg" alt="fossil1">
+				<h3>Fossil</h3>
+				<h4>Fossil Neely 34mm Women's Casual Watch with Heart Stud Earrings</h4>
+			</a>
+			<h4>$129.99</h4>
+		</div>
+		<div class="block">
+			<a href="listing-womens.html"><img src="img/womens-bulova.jpg" alt="bulova1">
+				<h3>Bulova</h3>
+				<h4>Bulova 34mm Women's Dress Watch with Swarovski Crystals</h4>
+			</a>
+			<h4>$249.99</h4>
+		</div>
+		<div class="block">
+			<a href="listing-womens.html"> <img src="img/womens-fossil2.jpg" alt="fossil2">
+				<h3>Fossil</h3>
+				<h4>Fossil Jacqueline 36mm Women's Marble Watch</h4>
+			</a>
+			<h4>$164.99</h4>
+		</div>
+		<div class="block">
+			<a href="listing-womens.html"><img src="img/womens-fossil3.jpg" alt="fossil3">
+				<h3>Fossil</h3>
+				<h4>Fossil Jacqueline 36mm Women's Mesh Watch</h4>
+			</a>
+			<h4>$139.99</h4>
+		</div>
+		<div class="block">
+			<a href="listing-womens.html"><img src="img/womens-tedbaker.jpg" alt="tedbaker1">
+				<h3>Ted Baker</h3>
+				<h4>Ted Baker Women's Kate Watch</h4>
+			</a>
+			<h4>$144.99</h4>
+		</div>
+		<div class="block">
+			<a href="listing-womens.html"><img src="img/womens-fossil4.jpg" alt="fossil4">
+				<h3>Fossil</h3>
+				<h4>Fossil Jacqueline 36mm Women's Casual Watch</h4>
+			</a>
+			<h4>$179.99</h4>
+		</div>
 
 
 	</section>
