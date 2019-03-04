@@ -2,7 +2,6 @@
 
 function showOverview() {
   var show = document.getElementById("overview");
-  show.style.display ="none";
   if (show.style.display === "none") {
     show.style.display = "block";
   } else {

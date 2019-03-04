@@ -49,9 +49,11 @@
 }
 
 .button_desc {
+    display: block;
     text-decoration: none;
     background-color: transparent;
     border: none;  
+    padding: 0.1em;
     transition: all 0.5s ease;
 }
 
@@ -87,6 +89,10 @@
 }
 
 #overview {
+    display: none;
+}
+
+#moreInfo {
     display: none;
 }
 
