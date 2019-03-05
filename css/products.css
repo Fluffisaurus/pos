@@ -10,6 +10,10 @@
     flex-basis: 25%;
 }
 
+.block:active, .block:hover, .block:focus {
+    opacity: 0.7;
+}
+
  .headerimg h2 {
     text-align: center;
  }
@@ -29,7 +33,6 @@
     margin-top: 0; 
     margin-bottom: 0;
   }
-
   
 @media (min-width: 60em) {
     .container_prod .block {
