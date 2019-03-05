@@ -58,21 +58,28 @@ img {
 }
 
 .container_insta {
-    height: auto;
+    display: flex;
     max-width: 100%;
     flex-wrap: wrap;
-}
-
-iframe {
-    border: none;
+    flex-direction: column;
 }
 
 .container_insta h2 {
     text-align: center;
+    flex-grow: 1;
+}
+
+iframe {
+    border: none;
+    max-width: 100%;
+    max-height: 100%;
+    flex-grow: 1;
 }
 
 .grid_third {
-    flex-basis: 33%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 
