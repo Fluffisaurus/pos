@@ -321,11 +321,11 @@ a h1 {
   }
   .nav_center{
     text-align: center;
-    flex-basis: 90%;
+    flex-grow: 1;
   }
 
   [data-menu-component] {
-    display: inline-block;
+    display: flex;
   }
 }
 
