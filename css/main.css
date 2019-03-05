@@ -164,6 +164,13 @@ but modified for our own use*/
 
 label {
   display: inline-block;
+  padding: 0.2rem;
+  text-decoration: none;
+  transition: all 0.5s ease;
+  text-transform: uppercase;
+  color: #8B8D91;
+  background-color: transparent;
+  border: 0.08em solid transparent;
 }
 
 [role="menu"] ul {
@@ -209,6 +216,63 @@ label {
   white-space: nowrap;
 }
 /*#endregion*/
+
+
+/* #region */
+[cart-menu-component]{
+  display: inline-block;
+}
+
+.vh_cart { 
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding:0 !important;
+  border:0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+#menu_cart_stuff ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+[cart-opens-menu], #menu_cart_stuff a {
+  line-height: 1;
+  color: #8B8D91;
+  padding: 0.33rem 0.5rem;
+  text-decoration: none;
+}
+
+[type="checkbox"]:focus + [cart-opens-menu], #menu_cart_stuff a:focus {
+  outline: none;
+  border-bottom: 0.05em solid #292830;
+  color: #292830;
+}
+
+#menu_cart_stuff {
+  position: fixed;
+  display: block;
+  overflow-x: hidden;
+  z-index: 1;
+  width: 0%;
+  height: 100%;
+  right: 0;
+  background: white;
+  padding-top: 1.6em; 
+  opacity: 0.9;
+  transition: all ease 0.4s;
+}
+
+#menu_cart_stuff a {
+  display: block;
+  min-width: 100%;
+  margin-top: 0.125rem;
+  white-space: nowrap;
+}
+/* #endregion */
 
 .nav_left {
   margin-top: 0.5em;

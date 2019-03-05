@@ -73,7 +73,23 @@
 		<div class="nav_right">
 			<nav>
 				<a href="about.html">About Us</a>
-				<a href="checkout.html">Cart</a>
+				<!-- <a href="checkout.html">Cart</a> -->
+				<div cart-menu-component id="menu_cart">
+						<input type="checkbox" role="button" aria-haspopup="true" id="toggle_cart" class="vh_cart">
+						<label for="toggle_cart" cart-opens-menu>
+							Checkout
+							<span class="vh_cart expanded-text">expanded</span>
+							<span class="vh_cart collapsed-text">collapsed</span>
+						</label>
+						<div role="menu" cart-menu-origin="right" id="menu_cart_stuff">
+							<ul id="menu_cart_items">
+								<li><a href="mens.html">Mens</a></li>
+								<li><a href="womens.html">Womens</a></li>
+								<li><a href="about.html">About Us</a></li>
+								<li><a href="cart.html">Cart</a></li>
+							</ul>
+						</div>
+					</div>
 			</nav>
 		</div>
 	</section>
