@@ -83,3 +83,14 @@ function appendHtml(target, str) {
     target.appendChild(div.children[0]);
   }
 }
+
+function showMiniCart(){
+  if(document.getElementById("mini_scrollable_section").style.height === "0vh" || document.getElementById("mini_scrollable_section").style.height === ""){
+    document.getElementById("mini_scrollable_section").style.height = "35vh";
+    document.getElementById("checkout_link").style.display = "block";
+  }
+  else{
+    document.getElementById("mini_scrollable_section").style.height = "0vh";
+    document.getElementById("checkout_link").style.display = "none";
+  }
+}

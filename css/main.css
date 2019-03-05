@@ -350,7 +350,18 @@ label {
   color: white;
 }
 
+#mini_scrollable_section{
+  height: 0vh;
+  transition: all ease 0.4s;
+}
 
+#mini_cart{
+  display: block;
+}
+
+#checkout_link{
+  display: none;
+}
 
 /* #endregion CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAART*/
 

@@ -39,7 +39,7 @@ form input, form select, form legend, form textarea{
   }
 }
 
-@media (max-width: 60em){
+@media (max-width: 65em){
   .container{
     padding-left: 0.4em;
     padding-right:0.4em;
