@@ -13,13 +13,11 @@ window.onload = function () {
     //load in number of cart items
     document.getElementById("cart_label").innerHTML = "Cart(" + localStorage.getItem("cartNum") + ")";
     //if num of cart items is > 0, load them in
-    for (var i = 0; i < localStorage.getItem("cartNum"); i++) {
-      for (var j = 0; j < localStorage.getItem("men"); j++) {
-        appendHtml(document.getElementById("scroll_section"), item1);
-      }
-      for (var k = 0; k < localStorage.getItem("women"); k++) {
-        appendHtml(document.getElementById("scroll_section"), item2);
-      }
+    for (var i = 0; i < localStorage.getItem("men"); i++) {
+      appendHtml(document.getElementById("scroll_section"), item1);
+    }
+    for (var i = 0; i < localStorage.getItem("women"); i++) {
+      appendHtml(document.getElementById("scroll_section"), item2);
     }
   }
 }
@@ -39,10 +37,12 @@ function update() {
 
   // depending on the curr listing, add item and update 
   if (document.title === names[0]) {
+    console.log("men + 1");
     appendHtml(document.getElementById("scroll_section"), item1);
     increment("men");
   } 
   else if (document.title === names[1]) {
+    console.log("women + 1");
     appendHtml(document.getElementById("scroll_section"), item2);
     increment("women");
   } 
