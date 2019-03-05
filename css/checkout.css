@@ -38,3 +38,11 @@ form input, form select, form legend, form textarea{
     flex-basis: 100%;
   }
 }
+
+@media (max-width: 60em){
+  .container{
+    padding-left: 0.4em;
+    padding-right:0.4em;
+    flex-direction: column;
+  }
+}
