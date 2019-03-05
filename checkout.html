@@ -57,10 +57,10 @@
 						<a onclick="showMiniCart()">Cart</a>
 						<div id="mini_cart">
 							<div class="scrollable_section" id="mini_scrollable_section">
-								<div class="cart_listing" id="listing">
+								<div class="cart_listing">
 									<img src="img/mens-fossil.jpg" alt="placeholder">
 								</div>
-								<div class="cart_listing" id="listing">
+								<div class="cart_listing">
 									<img src="img/womens-fossil2.jpg" alt="placeholder">
 								</div>
 							</div>
@@ -241,16 +241,31 @@
 
 		<section id="review" class="container_item">
 			<h2>Review</h2>
-			<div role="menu" cart-menu-origin="right" id="menu_cart_stuff">
-				<div id="menu_cart_items">
-					<div>
-						<button onclick="resetValue()">clear</button>
+			<div>
+				<div class="scrollable_section">
+					<div class="cart_listing">
+						<img src="img/mens-fossil.jpg" alt="placeholder">
+						<div class="cart_item_description">
+							<h3>Fossil Commuter 42mm Men\'s Watch</h3>
+							<h4>$139.99</h4>
+						</div>
 					</div>
-					<div class="scrollable_section" id="scroll_section">
-						<!-- listings here -->
+					<div class="cart_listing">
+						<img src="img/womens-fossil2.jpg" alt="placeholder">
+						<div class="cart_item_description">
+							<h3>Fossil Jacqueline 36mm Women\'s Watch</h3>
+							<h4>$164.99</h4>
+						</div>
 					</div>
-					<a href="checkout.html">Continue to checkout</a>
+					<div class="cart_listing">
+						<img src="img/womens-fossil2.jpg" alt="placeholder">
+						<div class="cart_item_description">
+							<h3>Fossil Jacqueline 36mm Women\'s Watch</h3>
+							<h4>$164.99</h4>
+						</div>
+					</div>
 				</div>
+				<a href="checkout.html" id="checkout_link">Checkout</a>
 			</div>
 		</section>
 	</div>
