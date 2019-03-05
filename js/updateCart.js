@@ -25,8 +25,8 @@ window.onload = function () {
 }
 
 var names = ["Men\'s Listing", "Women\'s Listing"]
-var item1 = '<div class="cart_listing" id="listing"><img src="https://via.placeholder.com/150" alt="placeholder"><div class="cart_item_description"><h3>Mens Item</h3><p>item description</p></div></div>'
-var item2 = '<div class="cart_listing" id="listing"><img src="https://via.placeholder.com/150" alt="placeholder"><div class="cart_item_description"><h3>Womens Item</h3><p>item description</p></div></div>'
+var item1 = '<div class="cart_listing" id="listing"><img src="img/mens-fossil.jpg" alt="placeholder"><div class="cart_item_description"><h3>Fossil Commuter 42mm Men\'s Watch</h3><h4>$139.99</h4></div></div>'
+var item2 = '<div class="cart_listing" id="listing"><img src="img/womens-fossil2.jpg" alt="placeholder"><div class="cart_item_description"><h3>Fossil Jacqueline 36mm Women\'s Watch</h3><h4>$164.99</h4></div></div>'
 
 function update() {
   //update cartNum

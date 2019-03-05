@@ -255,9 +255,7 @@ label {
   height: auto;
   right: -0.8em;
   background: white;
-  border: black;
-  border-style: solid;
-  border-width: 0.2em;
+  border: 0.1em solid #8B8D91;
   margin-top: 1.5em;
   padding: 0.2em; 
   opacity: 1;
@@ -280,16 +278,80 @@ label {
 .cart_listing{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
 }
 
 .cart_listing .cart_item_description{
-  display: flex;
+  flex-basis: 50%;
   flex-direction: column;
   justify-content: center;
-  padding-left: 0.25em; 
+  padding-left: 0.35em; 
 }
+
+.cart_item_description h3 {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.cart_item_description h4 {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cart_listing img {
+  flex-basis: 50;
+  display: inline-block;
+  width: 10em;
+  height: 10em;
+}
+
+#menu_cart_items a {
+  display: block;
+    padding: 0.5rem;
+    margin-top: 2rem;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    background-color: #292830;
+    border: 0.1em solid #292830;
+    margin: 0.2em;
+}
+
+#menu_cart_items a:active, #menu_cart_items a:hover, #menu_cart_items a:focus {
+  background-color: transparent;
+  color: #292830;
+}
+
+#menu_cart_items button {
+  display: block;
+    padding: 0.5rem;
+    margin-top: 2rem;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: #292830;
+    text-align: center;
+    border: 0.1em solid #292830;
+    margin: 0.2em;
+}
+
+#menu_cart_items button:active, #menu_cart_items button:hover, #menu_cart_items button:focus {
+  background-color: #292830;
+  color: white;
+}
+
+
+
 /* #endregion CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAART*/
 
 .nav_left {
