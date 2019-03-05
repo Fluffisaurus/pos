@@ -10,20 +10,10 @@
     flex-basis: 25%;
 }
 
-a h1 {
-    text-decoration: none;
-    display: inline-block;
-    color: #292830; 
-  }
-  
-  a h2 {
-    text-decoration: none;
-    display: inline-block;
-    color: #292830;
-    margin-top: 0; 
-    margin-bottom: 0;
-  }
-  
+ .headerimg h2 {
+    text-align: center;
+ }
+
   a h3 {
     text-decoration: none;
     display: inline-block;
