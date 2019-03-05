@@ -53,7 +53,20 @@
                     <li><a href="mens.html">Mens</a></li>
                     <li><a href="womens.html">Womens</a></li>
                     <li><a href="about.html">About Us</a></li>
-                    <li><a href="cart.html">Cart</a></li>
+                    <li>
+                        <a onclick="showMiniCart()">Cart</a>
+                        <div id="mini_cart">
+                            <div class="scrollable_section" id="mini_scrollable_section">
+                                <div class="cart_listing" id="listing">
+                                    <img src="img/mens-fossil.jpg" alt="placeholder">
+                                </div>
+                                <div class="cart_listing" id="listing">
+                                    <img src="img/womens-fossil2.jpg" alt="placeholder">
+                                </div>
+                            </div>
+                            <a href="checkout.html" id="checkout_link">Checkout</a>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -114,13 +127,17 @@
                     <h3>▸ Overview</h3>
                 </a>
                 <div id="overview">
-                    <p>The Fossil Jacqueline watch is a classic timepiece that makes a statement while giving you the time. Featuring a genuine white marble dial with a pastel pink bezel, three-hand movement, and mineral gray leather strap, this whimsical wristwear easily becomes a staple of your everyday wardrobe.</p>
+                    <p>The Fossil Jacqueline watch is a classic timepiece that makes a statement while giving you the
+                        time. Featuring a genuine white marble dial with a pastel pink bezel, three-hand movement, and
+                        mineral gray leather strap, this whimsical wristwear easily becomes a staple of your everyday
+                        wardrobe.</p>
                 </div>
                 <a class="button_desc" onclick="showMoreInfo()">
                     <h3>▸ More Information</h3>
                 </a>
                 <div id="moreInfo">
-                    <li>Genuine white marble dial with a pastel pink bezel and mineral gray leather strap offers stylish design that matches any outfit</li>
+                    <li>Genuine white marble dial with a pastel pink bezel and mineral gray leather strap offers stylish
+                        design that matches any outfit</li>
                     <li>Three-hand movement allows for timing down to the second</li>
                     <li>Water resistant to 30m for those days at the beach or by the pool</li>
                     <li>Band size of 7.75 to 8.00 inches for easy adjustment if necessary</li>
@@ -137,4 +154,5 @@
 
 <script src="js/krabbypatty.js"></script>
 <script src="js/updateCart.js"></script>
+
 </html>
