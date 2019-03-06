@@ -6,9 +6,9 @@
   <meta charset="utf-8">
   <title>P01 - Style Guide Template</title>
 
-  <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/main.css" rel="stylesheet">
-  <link href="css/grid.css" rel="stylesheet">
+  <link href="style_guide/css/normalize.css" rel="stylesheet">
+  <link href="style_guide/css/main.css" rel="stylesheet">
+  <link href="style_guide/css/grid.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,600i,700,700i,800" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i" rel="stylesheet">
 </head>
@@ -265,24 +265,24 @@
       <h4>Sample code:</h4>
       <pre><code>
         &lt;nav&gt;
-          &lt;a href="#"&gt;Women's&lt;/a&gt;
-          &lt;a href="#"&gt;Men's&lt;/a&gt;
-          &lt;a href="#"&gt;Wearable Tech&lt;/a&gt;
-          &lt;a href="#"&gt;Sale&lt;/a&gt;
+          &lt;a href="#"&gt;Mens&lt;/a&gt;
+          &lt;a href="#"&gt;Womens&lt;/a&gt;
+          &lt;a href="#"&gt;About Us&lt;/a&gt;
+          &lt;a href="#"&gt;Cart&lt;/a&gt;
         &lt;/nav&gt;
       </code></pre>
 
       <h4>Rendered element:</h4>
       <nav>
-        <a href="#">Women's</a>
-        <a href="#">Men's</a>
-        <a href="#">Wearable Tech</a>
-        <a href="#">Sale</a>
+        <a href="#">Mens</a>
+        <a href="#">Womens</a>
+        <a href="#">About Us</a>
+        <a href="#">Cart</a>
       </nav>
 
     </section>
 
-    <section class="element" id = "productListing">
+    <section class="element" id="productListing">
       <h3>Product/Service Listing</h3>
 
       <h4>CSS selector: </h4>
@@ -290,24 +290,25 @@
 
       <h4>Sample code:</h4>
       <pre><code>
-        &lt;figure class="item_listing"&gt;
-          &lt;img src="https://via.placeholder.com/300x300.png?text=Flower+Picture+Here" alt="placeholder for a watch picture from https://placeholder.com/"&gt;
-          &lt;h4>Title of Watch Product Here&lt;/h4&gt;
-          &lt;p>Watch description here... &lt;/p&gt;
-          &lt;span> $XXX.xx - $XXX.xx&lt;/span&gt;
-        &lt;/figure&gt;
+        &lt;section class="container_prod"&gt;
+          &lt;div class="block"&gt;
+            &lt;a href="listing-mens.html"&gt;&lt;img src="img/mens-bulova2.jpg" alt="bulova2"&gt;
+              &lt;h3&gt;Bulova&lt;/h3&gt;
+              &lt;h4&gt;Bulova 41mm Men's Analog Dress Chronograph Watch with Leather Strap&lt;/h4&gt;
+            &lt;/a&gt;
+            &lt;h4&gt;$249.99&lt;/h4&gt;
+          &lt;/div&gt;
+        &lt;/section&gt;
       </code></pre>
 
       <h4>Rendered element:</h4>
-      <section id="#products" class="container_product_listing">
-        <div class="block_pl">
-          <figure class="item_listing">
-            <img src="https://via.placeholder.com/300x300.png?text=Flower+Picture+Here"
-              alt="placeholder for a watch picture from https://placeholder.com/">
-            <h4>Title of Watch Product Here</h4>
-            <p>Watch description here... </p>
-            <span> $XXX.xx - $XXX.xx</span>
-          </figure>
+      <section class="container_prod">
+        <div class="block">
+          <a href="listing-mens.html"><img src="img/mens-bulova2.jpg" alt="bulova2">
+            <h3>Bulova</h3>
+            <h4>Bulova 41mm Men's Analog Dress Chronograph Watch with Leather Strap</h4>
+          </a>
+          <h4>$249.99</h4>
         </div>
       </section>
     </section>
@@ -320,54 +321,71 @@
 
       <h4>Sample code:</h4>
       <pre><code>
-        &lt;form class="payment_form"&gt;
-          &lt;div&gt;
-            &lt;h4>Billing Information&lt;/h4&gt;
-            &lt;label for="firstName">First Name &lt;/label&gt; &lt;input type="text" name="firstName" id="firstName"&gt;
-          &lt;/div&gt;
-      
-          &lt;div&gt;
-            &lt;button type="submit"&gt;Get in touch&lt;/button&gt;
-          &lt;/div&gt;
-        &lt;/form&gt;
+        &lt;section id="payment_info" class="container_item"&gt;
+          &lt;Payment&lt;/h2&gt;
+          &lt;Method of Payment&lt;/h3&gt;
+          &lt;form&gt;
+            &lt;select id="type_of_payment"&gt;
+              &lt;option&gt;Visa&lt;/option&gt;
+              &lt;option&gt;MasterCard&lt;/option&gt;
+              &lt;option&gt;American Express&lt;/option&gt;
+            &lt;/select&gt;
+            &lt;input type="number" id="credit_card_number" placeholder="Credit Card Number"&gt;
+            &lt;select id="payment_month"&gt;
+              &lt;option value=""&gt;Month&lt;/option&gt;
+              &lt;option value="1"&gt;01&lt;/option&gt;
+            &lt;/select&gt;
+            &lt;select id="payment_year"&gt;
+              &lt;option value=""&gt;Year&lt;/option&gt;
+              &lt;option value="2019"&gt;2019&lt;/option&gt;
+              &lt;option value="2020"&gt;2020&lt;/option&gt;
+            &lt;/select&gt;
+            &lt;input type="number" id="payment_security_code" placeholder="Security Code (CVV)"&gt;
+          &lt;/form&gt;
+        &lt;/section&gt;
       </code></pre>
 
       <h4>Rendered element:</h4>
-      <form class="payment_form">
-        <!-- Billing info -->
-        <div>
-          <h4>Billing Information</h4>
-          <label for="firstName">First Name </label> <input type="text" name="firstName" id="firstName">
-          <label for="lastName">Last Name </label><input type="text" name="lastName" id="lastName">
-          <label for="address">Address </label><input type="text" name="addnress" id="address">
-          <label for="address2">Address Line 2 </label><input type="text" name="addnress2" id="address2">
-          <label for="city">City </label><input type="text" name="city" id="city">
-          <fieldset>
-            <legend>Province</legend>
-            <label for="BC">British Columbia </label><input type="radio" name="province" id="BC" value="BC">
-            <label for="AB">Alberta </label><input type="radio" name="province" id="AB" value="AB">
-            <label for="MB">Manitoba </label><input type="radio" name="province" id="MB" value="MB">
-            <label for="NB">New Brunswick </label><input type="radio" name="province" id="NB" value="NB">
-            <label for="NL">Newfoundland and Labrador </label><input type="radio" name="province" id="NL" value="NL">
-            <label for="NT">Northwest Territories </label><input type="radio" name="province" id="NT" value="NT">
-            <label for="NS">Nova Scotia </label><input type="radio" name="province" id="NS" value="NS">
-            <label for="NU">Nunavut </label><input type="radio" name="province" id="NU" value="NU">
-            <label for="ON">Ontario </label><input type="radio" name="province" id="ON" value="ON">
-            <label for="PE">Prince Edward Island </label><input type="radio" name="province" id="PE" value="PE">
-            <label for="QC">Quebec </label><input type="radio" name="province" id="QC" value="QC">
-            <label for="SK">Saskatchewan </label><input type="radio" name="province" id="SK" value="SK">
-            <label for="YT">Yukon </label><input type="radio" name="province" id="YT" value="YT">
-          </fieldset>
-          <label for="postalCode">Postal Code </label><input type="text" name="postalCode" id="postalCode">
-          <label for="phoneNum">Phone Number </label><input type="number" name="phoneNum" id="phoneNum">
-        </div>
-
-        <!-- submit section -->
-        <div>
-          <!-- currently in the contact us page they use the phrase "Get in touch" for submit -->
-          <button type="submit">Get in touch</button>
-        </div>
-      </form>
+      <section id="payment_info" class="container_item">
+        <h2>Payment</h2>
+        <h3>Method of Payment</h3>
+        <form>
+          <select id="type_of_payment">
+            <option>Visa</option>
+            <option>MasterCard</option>
+            <option>American Express</option>
+          </select>
+          <input type="number" id="credit_card_number" placeholder="Credit Card Number">
+          <select id="payment_month">
+            <option value="">Month</option>
+            <option value="1">01</option>
+            <option value="2">02</option>
+            <option value="3">03</option>
+            <option value="4">04</option>
+            <option value="5">05</option>
+            <option value="6">06</option>
+            <option value="7">07</option>
+            <option value="8">08</option>
+            <option value="9">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+          <select id="payment_year">
+            <option value="">Year</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+            <option value="2027">2027</option>
+          </select>
+          <input type="number" id="payment_security_code" placeholder="Security Code (CVV)">
+        </form>
+      </section>
 
     </section>
 
@@ -379,73 +397,190 @@
 
       <h4>Sample code:</h4>
       <pre><code>
-        &lt;section class="container_checkout"&gt;
-          &lt;div class="section_title"&gt;
-            &lt;h2&gt;Checkout&lt;/h2&gt;
-          &lt;/div&gt;
-          &lt;div class="checkout_layout"&gt;
-            &lt;div class="LHS"&gt;
-              &lt;!-- item layout stuff here --&gt;
-            &lt;/div&gt; &lt;!-- end LHS --&gt;
-      
-            &lt;div class="RHS"&gt;
-              &lt;!-- confirmation stuff here --&gt;
-            &lt;/div&gt; &lt;!-- end RHS --&gt;
-          &lt;div&gt;
-        &lt;/section&gt;
+        &lt;div class="container"&gt;
+          &lt;section id="shipping_info" class="container_item"&gt;
+            &lt;h2&gt;Shipping&lt;/h2&gt;
+            &lt;section id="shipping"&gt;
+              &lt;h3&gt;Shipping Address&lt;/h3&gt;
+              &lt;!-- shipping stuff here --&gt;
+            &lt;/section&gt;
+  
+            &lt;section id="billing"&gt;
+              &lt;h3&gt;Billing Address&lt;/h3&gt;
+              &lt;!-- billing stuff here --&gt;
+            &lt;/section&gt;
+  
+            &lt;section id="gift" style="display: none"&gt;
+              &lt;h3&gt;Personalized Message&lt;/h3&gt;
+              &lt;!-- personalized message --&gt;
+            &lt;/section&gt;
+          &lt;/section&gt;
+  
+          &lt;section id="payment_info" class="container_item"&gt;
+            &lt;h2&gt;Payment&lt;/h2&gt;
+            &lt;h3&gt;Method of Payment&lt;/h3&gt;
+            &lt;!-- form stuff here --&gt;
+          &lt;/section&gt;
+  
+          &lt;section id="review" class="container_item"&gt;
+            &lt;h2&gt;Review&lt;/h2&gt;
+            &lt;!-- review stuff here --&gt;
+          &lt;/section&gt;
+        &lt;/div&gt;
       </code></pre>
 
       <h4>Rendered element:</h4>
-      <section class="container_checkout">
-        <div class="section_title">
-          <h2>Checkout</h2>
-        </div>
-        <div class="checkout_layout">
-          <div class="LHS">
-            <div class="block_checkout">
-              <figure class="item_checkout">
-                <div class="checkout_picture">
-                  <img src="https://via.placeholder.com/300x300.png?text=Flower+Picture+Here"
-                    alt="placeholder for a flower picture from https://placeholder.com/">
+      <div class="container">
+        <section id="shipping_info" class="container_item">
+          <h2>Shipping</h2>
+          <section id="shipping">
+            <h3>Shipping Address</h3>
+            <form id="shipping_address" class="shipping_form">
+              <input type="text" id="shipping_first_name" placeholder="First Name">
+              <input type="text" id="shipping_last_name" placeholder="Last Name">
+              <input type="text" id="shipping_street_address" placeholder="Street Address">
+              <input type="text" id="shipping_unit" placeholder="Unit">
+              <input type="text" id="shipping_city" placeholder="City">
+              <select id="shipping_province_select">
+                <option value="">Select a Province / Territory</option>
+                <option value="BC">British Columbia</option>
+                <option value="AB">Alberta</option>
+                <option value="MB">Manitoba</option>
+                <option value="NB">New Brunswick</option>
+                <option value="NL">Newfoundland and Labrador</option>
+                <option value="NT">Northwest Territories</option>
+                <option value="NS">Nova Scotia</option>
+                <option value="NU">Nunavut</option>
+                <option value="ON">Ontario</option>
+                <option value="PE">Prince Edward Island</option>
+                <option value="QC">Quebec</option>
+                <option value="SK">Saskatchewan</option>
+                <option value="YT">Yukon</option>
+              </select>
+              <input type="number" id="shipping_phone_number" placeholder="Phone Number">
+              <div id="is_billing_address">
+                <input type="checkbox" id="checkbox_billing_address" onclick="isBillingChecked()">
+                <label for="billing_address">Same as shipping address</label>
+              </div>
+              <div id="is_gift">
+                <input type="checkbox" id="checkbox_is_gift" onclick="isGiftChecked()">
+                <label for="is_gift">Is this item a gift?</label>
+              </div>
+            </form>
+          </section>
+
+          <section id="billing">
+            <h3>Billing Address</h3>
+            <form id="billing_address" class="billing_form">
+              <input type="text" id="shipping_first_name" placeholder="First Name">
+              <input type="text" id="shipping_last_name" placeholder="Last Name">
+              <input type="text" id="shipping_street_address" placeholder="Street Address">
+              <input type="text" id="shipping_unit" placeholder="Unit">
+              <input type="text" id="shipping_city" placeholder="City">
+              <select id="shipping_province_select">
+                <option value="">Select a Province / Territory</option>
+                <option value="BC">British Columbia</option>
+                <option value="AB">Alberta</option>
+                <option value="MB">Manitoba</option>
+                <option value="NB">New Brunswick</option>
+                <option value="NL">Newfoundland and Labrador</option>
+                <option value="NT">Northwest Territories</option>
+                <option value="NS">Nova Scotia</option>
+                <option value="NU">Nunavut</option>
+                <option value="ON">Ontario</option>
+                <option value="PE">Prince Edward Island</option>
+                <option value="QC">Quebec</option>
+                <option value="SK">Saskatchewan</option>
+                <option value="YT">Yukon</option>
+              </select>
+              <input type="number" id="shipping_phone_number" placeholder="Phone Number">
+            </form>
+          </section>
+
+          <section id="gift" style="display: none">
+            <h3>Personalized Message</h3>
+            <form>
+              <legend>Write a personalized message to the recipient!</legend>
+              <div id="is_wrapped">
+                <input type="checkbox" id="wrap_gift" checked>
+                <label for="wrap_gift">Wrap your gift?</label>
+              </div>
+              <textarea rows="6" cols="35" minlength="0" maxlength="140" placeholder="140 max characters"></textarea>
+            </form>
+          </section>
+        </section>
+
+        <section id="payment_info" class="container_item">
+          <h2>Payment</h2>
+          <h3>Method of Payment</h3>
+          <form>
+            <select id="type_of_payment">
+              <option>Visa</option>
+              <option>MasterCard</option>
+              <option>American Express</option>
+            </select>
+            <input type="number" id="credit_card_number" placeholder="Credit Card Number">
+            <select id="payment_month">
+              <option value="">Month</option>
+              <option value="1">01</option>
+              <option value="2">02</option>
+              <option value="3">03</option>
+              <option value="4">04</option>
+              <option value="5">05</option>
+              <option value="6">06</option>
+              <option value="7">07</option>
+              <option value="8">08</option>
+              <option value="9">09</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+            </select>
+            <select id="payment_year">
+              <option value="">Year</option>
+              <option value="2019">2019</option>
+              <option value="2020">2020</option>
+              <option value="2021">2021</option>
+              <option value="2022">2022</option>
+              <option value="2023">2023</option>
+              <option value="2024">2024</option>
+              <option value="2025">2025</option>
+              <option value="2026">2026</option>
+              <option value="2027">2027</option>
+            </select>
+            <input type="number" id="payment_security_code" placeholder="Security Code (CVV)">
+          </form>
+        </section>
+
+        <section id="review" class="container_item">
+          <h2>Review</h2>
+          <div>
+            <div class="scrollable_section">
+              <div class="cart_listing">
+                <img src="img/mens-fossil.jpg" alt="placeholder">
+                <div class="cart_item_description">
+                  <h3>Fossil Commuter 42mm Men\'s Watch</h3>
+                  <h4>$139.99</h4>
                 </div>
-                <div class="checkout_description">
-                  <h4>Title of Flower Here</h4>
-                  <span> $XX.xx - $XXX.xx</span>
+              </div>
+              <div class="cart_listing">
+                <img src="img/womens-fossil2.jpg" alt="placeholder">
+                <div class="cart_item_description">
+                  <h3>Fossil Jacqueline 36mm Women\'s Watch</h3>
+                  <h4>$164.99</h4>
                 </div>
-              </figure>
-              <div class="quantity">
-                <input class="quant_number" type="number" value="1" min="0">
+              </div>
+              <div class="cart_listing">
+                <img src="img/womens-fossil2.jpg" alt="placeholder">
+                <div class="cart_item_description">
+                  <h3>Fossil Jacqueline 36mm Women\'s Watch</h3>
+                  <h4>$164.99</h4>
+                </div>
               </div>
             </div>
-            <div class="block_checkout">
-              <figure class="item_checkout">
-                <div class="checkout_picture">
-                  <img src="https://via.placeholder.com/300x300.png?text=Flower+Picture+Here"
-                    alt="placeholder for a flower picture from https://placeholder.com/">
-                </div>
-                <div class="checkout_description">
-                  <h4>Title of Flower Here</h4>
-                  <!-- went to websites like amazon and other online stores to see how they did their pricing, they all used span tag
-                                        to style their pricing with CSS, also referred to w3schools for more details on this tag https://www.w3schools.com/tags/tag_span.asp  -->
-                  <span> $XX.xx - $XXX.xx</span>
-                </div>
-              </figure>
-              <div class="quantity">
-                <input class="quant_number" type="number" value="1" min="0">
-              </div>
-            </div>
-          </div> <!-- end LHS -->
-
-          <div class="RHS">
-            <div>
-              <h3>Cart Total</h3>
-              <p>ajvlajsdlfkjaslk;fjaskl;fjd;slajf;dslfja;l</p>
-              <a class="button_nav button_dark" href="checkout-payment.html" target="_blank">Proceed to Payment</a>
-            </div>
-          </div> <!-- end RHS -->
-        </div>
-
-      </section>
+            <a href="checkout.html" id="checkout_link">Checkout</a>
+          </div>
+        </section>
+      </div>
 
     </section>
 
