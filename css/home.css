@@ -34,8 +34,8 @@
   }
   
 .button_trans:active, .button_trans:hover, .button_trans:focus {
-    background-color: white;
-    border-color: white;
+    color: white;
+    background-color: #292830;;
 }
 
 img {
