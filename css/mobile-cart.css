@@ -1,0 +1,10 @@
+#menu_cart_items{
+  width: 50%;
+  margin: auto;
+}
+
+@media(max-width: 45em){
+  #menu_cart_items{
+    width: 100%;
+  }
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Basic Page Needs
+  ================================================== -->
+  <meta charset="utf-8">
+  <title>Women's Listing</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  ================================================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- CSS
+	================================================== -->
+  <link href="css/normalize.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/mobile-cart.css"> 
+
+  <!-- Favicons
+	================================================== -->
+  <link rel="shortcut icon" href="">
+
+  <!-- Fonts
+	================================================== -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,600i,700,700i,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i" rel="stylesheet">
+
+  <!-- JS
+	================================================== -->
+  <!-- at bottom -->
+
+
+</head>
+
+<body>
+  <section class="container_nav">
+    <!-- taken from: https://codepen.io/heydon/pen/vmKVJK?editors=1100 -->
+    <!-- but modified for our own use -->
+    <div data-menu-component>
+      <input type="checkbox" role="button" aria-haspopup="true" id="toggle" class="vh">
+      <label for="toggle" data-opens-menu>
+        &#x2630;
+        <span class="vh expanded-text">expanded</span>
+        <span class="vh collapsed-text">collapsed</span>
+      </label>
+      <div role="menu" data-menu-origin="left" id="menu_stuff">
+        <ul id="menu_items">
+          <li><a href="mens.html">Mens</a></li>
+          <li><a href="womens.html">Womens</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="mobile-cart.html">Cart</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="nav_left">
+      <nav>
+        <a href="mens.html">Mens</a>
+        <a href="womens.html">Womens</a>
+      </nav>
+    </div>
+    <div class="nav_center">
+      <a href="index.html">
+        <h1>WATCH STATION</h1>
+      </a>
+    </div>
+    <div class="nav_right">
+      <nav>
+        <a href="about.html">About Us</a>
+        <!-- <a href="checkout.html">Cart</a> -->
+        <div cart-menu-component id="menu_cart">
+          <input type="checkbox" role="button" aria-haspopup="true" id="toggle_cart" class="vh_cart">
+          <label for="toggle_cart" cart-opens-menu id="cart_label">
+            Cart(0)
+            <span class="vh_cart expanded-text">expanded</span>
+            <span class="vh_cart collapsed-text">collapsed</span>
+          </label>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Primary Page Layout
+	================================================== -->
+  <!-- all content goes in here -->
+  <div id="menu_cart_items">
+    <div>
+      <button onclick="resetValue()">clear</button>
+    </div>
+    <div class="scrollable_section" id="scroll_section">
+      <!-- listings here -->
+    </div>
+    <a href="checkout.html">Continue to checkout</a>
+  </div>
+
+</body>
+
+<script src="js/krabbypatty.js"></script>
+<script src="js/updateCart.js"></script>
+
+</html>
