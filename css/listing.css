@@ -152,6 +152,10 @@
         flex-basis: 40%;
     }
 
+    .container_review {
+        margin: 2em 8em;
+    }
+
 }
 
 @media (min-width: 45em) and (max-width: 65em) {
@@ -166,6 +170,10 @@
     .container_desc .sticky {
         padding: 0em 2em;
     }
+
+    .container_review {
+        margin: 2em 4em;
+    }
 }
 
 @media (max-width: 45em) {
@@ -179,6 +187,9 @@
 
     .container_desc .sticky {
         padding: 0em 2em;
+    }
+    .container_review {
+        margin: 2em 2em;
     }
 }
 
